@@ -118,13 +118,12 @@ $close-text-shadow:             0 1px 0 $black;
 // $table-head-bg:               $gray-200 !default;
 // $table-head-color:            $gray-700 !default;
 
-// $table-dark-bg:               $gray-900 !default;
-// $table-dark-accent-bg:        rgba($white, .05) !default;
-// $table-dark-hover-bg:         rgba($white, .075) !default;
-// $table-dark-border-color:     lighten($gray-900, 7.5%) !default;
-// $table-dark-color:            $body-bg !default;
-$table-dark-color:            $body-color;
+// $table-dark-bg:                 $gray-900 !default;
+// $table-dark-accent-bg:          rgba($white, .05);
+// $table-dark-hover-bg:           rgba($white, .075);
+// $table-dark-border-color:       lighten($gray-900, 7.5%);
+// $table-dark-color:              $body-bg;
+$table-dark-color:            $gray-300;
 
 // $table-caption-color:         $text-muted !default;
-
 

@@ -5,6 +5,11 @@
 
 @each $color, $value in $theme-colors {
     @include dark-table-row-variant($color, theme-color-level($color, -9));
-  }
-  
-  @include dark-table-row-variant(active, $table-active-bg);
+}
+
+@include dark-table-row-variant(active, $table-active-bg);
+
+
+.table-dark {
+    color: $table-dark-color;
+}  
