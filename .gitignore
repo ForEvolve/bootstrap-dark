@@ -62,6 +62,3 @@ typings/
 
 # VS Code user-specific stuff
 .vscode/iisexpress.json
-
-# Compiled assets
-dist/
