@@ -38,4 +38,4 @@ The following project applies `bootstrap-dark` to the bootstrap documentation si
 - [Bootstrap 4.1 Dark theme docs](https://github.com/Carl-Hugo/bootstrap-dark-docs.git)
 
 ## Special thanks
-I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.com/kit/) by [Alexander Rechsteiner](https://github.com/arechsteiner) at [Hacker Themes](https://hackerthemes.com). This allows me to publish a lighter version of the theme; making it easier to be used (versus the full )
+I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.com/kit/) by [Alexander Rechsteiner](https://github.com/arechsteiner) at [Hacker Themes](https://hackerthemes.com). This allows me to publish a lighter version of the theme; making it easier to be used (compared to the full Bootstrap Jekyll docs).
