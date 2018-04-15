@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer');
 
 gulp.task('build-theme', function () {
-    return gulp.src(['scss/*.scss'])
+    return gulp.src(['scss/bootstrap-dark.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer({

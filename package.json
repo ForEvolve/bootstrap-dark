@@ -3,7 +3,9 @@
     "description": "A Bootstrap 4.1 Dark theme.",
     "version": "1.0.0-alpha-3",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "gulp-watch": "gulp watch",
+        "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
+        "watch": "npm-run-all --parallel gulp-watch browser-sync"
     },
     "repository": {
         "type": "git",
@@ -26,12 +28,14 @@
     },
     "devDependencies": {
         "autoprefixer": "^8.2.0",
+        "browser-sync": "^2.23.6",
         "gulp": "^3.9.1",
         "gulp-clean-css": "^3.9.3",
         "gulp-postcss": "^7.0.1",
         "gulp-rename": "*",
         "gulp-sass": "^4.0.1",
         "gulp-scss-lint": "^0.6.1",
-        "gulp-sourcemaps": "^2.6.4"
+        "gulp-sourcemaps": "^2.6.4",
+        "npm-run-all": "^4.1.2"
     }
 }
