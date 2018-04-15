@@ -1,0 +1,10 @@
+// Table backgrounds
+//
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
+
+@each $color, $value in $theme-colors {
+    @include dark-table-row-variant($color, theme-color-level($color, -9));
+  }
+  
+  @include dark-table-row-variant(active, $table-active-bg);

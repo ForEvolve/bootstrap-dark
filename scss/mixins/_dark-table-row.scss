@@ -1,0 +1,30 @@
+// Tables
+
+@mixin dark-table-row-variant($state, $background) {
+    // Exact selectors below required to override `.table-striped` and prevent
+    // inheritance to nested tables.
+    .table-#{$state} {
+        &,
+        > th,
+        > td {
+            color: color-yiq($background);
+        }
+    }
+
+    // Hover states for `.table-hover`
+    // Note: this is not available for cells or rows within `thead` or `tfoot`.
+    .table-hover {
+        $hover-background: darken($background, 5%);
+
+        .table-#{$state} {
+            @include hover {
+                color: color-yiq($hover-background);
+
+                > td,
+                > th {
+                    color: color-yiq($hover-background);
+                }
+            }
+        }
+    }
+}

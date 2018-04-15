@@ -1,0 +1,130 @@
+$forevolve-green: #007f00;
+
+// stylelint-disable
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$color-darker-percent-full: 20%;
+$color-darker-percent-half: $color-darker-percent-full / 2;
+$color-darker-percent-quarter: $color-darker-percent-half / 2;
+$color-darker-percent-none: 0;
+
+$blue:    lighten(#007bff, $color-darker-percent-half);
+$indigo:  darken(#6610f2, $color-darker-percent-none);
+$purple:  darken(#6f42c1, $color-darker-percent-none);
+$pink:    darken(#e83e8c, $color-darker-percent-none);
+$red:     darken(#dc3545, $color-darker-percent-none);
+$orange:  darken(#fd7e14, $color-darker-percent-none);
+$yellow:  lighten(#ffc107, $color-darker-percent-half);
+$green:   darken(#28a745, $color-darker-percent-none);
+$teal:    darken(#20c997, $color-darker-percent-none);
+$cyan:    lighten(#17a2b8, $color-darker-percent-none);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $orange;
+$danger:        $red;
+$light:         $gray-300;
+$dark:          $gray-800;
+
+//$body-bg:       $gray-900; //#1E1E1E;
+$body-bg:#191d21;
+$body-color:    $gray-200; //#D4D4D4;
+
+$yiq-text-dark: $gray-900;
+$yiq-text-light: $gray-400;
+
+$link-color:                darken($body-color, 15%);
+$link-hover-color:          darken($link-color, 15%);
+
+$card-border-color:                 rgba($white, .125);
+$card-cap-bg:                       rgba($white, .03);
+//$card-bg:                           #191d21;
+$card-bg: $gray-900;
+
+$nav-tabs-border-color:             rgba($white, .125);
+$nav-tabs-link-hover-border-color:  $gray-700 $gray-700 $nav-tabs-border-color;
+$nav-tabs-link-active-color:        $gray-100;
+$nav-tabs-link-active-bg:           $body-bg;
+$nav-tabs-link-active-border-color: $gray-700 $gray-700 $nav-tabs-link-active-bg;
+
+
+$component-active-color:      $black;
+$component-active-bg:         $primary;
+
+// List group
+
+$list-group-bg:                     $body-bg;
+$list-group-border-color:           rgba($white, .125);
+
+$list-group-hover-bg:               $gray-900;
+$list-group-active-color:           $component-active-color;
+$list-group-active-bg:              $component-active-bg;
+$list-group-active-border-color:    $list-group-active-bg;
+
+$list-group-disabled-color:         $gray-400;
+$list-group-disabled-bg:            $list-group-bg;
+
+$list-group-action-color:           $gray-300;
+$list-group-action-hover-color:     $list-group-action-color;
+
+$list-group-action-active-color:    $body-color;
+$list-group-action-active-bg:       $gray-800;
+
+// Forms
+$input-bg:                              $black;
+$input-disabled-bg:                     $gray-800;
+
+$input-color:                           $gray-300;
+$input-border-color:                    $gray-600;
+
+$input-focus-bg:                        $body-bg;
+$input-focus-border-color:              lighten($component-active-bg, 25%);
+$input-focus-color:                     $input-color;
+
+$input-group-addon-color:               $input-color;
+$input-group-addon-bg:                  $gray-800;
+$input-group-addon-border-color:        $input-border-color;
+
+
+// Modals
+$modal-content-bg:              $body-bg;
+$modal-content-border-color:    rgba($white, .2);
+$modal-header-border-color:     $gray-800;
+$modal-footer-border-color:     $modal-header-border-color;
+
+$close-color:                   $white;
+$close-text-shadow:             0 1px 0 $black;
+
+// // Tables
+// $table-bg:                    transparent !default;
+// $table-accent-bg:             rgba($black, .05) !default;
+// $table-hover-bg:              rgba($black, .075) !default;
+// $table-active-bg:             $table-hover-bg !default;
+
+// $table-border-color:          $gray-300 !default;
+
+// $table-head-bg:               $gray-200 !default;
+// $table-head-color:            $gray-700 !default;
+
+// $table-dark-bg:               $gray-900 !default;
+// $table-dark-accent-bg:        rgba($white, .05) !default;
+// $table-dark-hover-bg:         rgba($white, .075) !default;
+// $table-dark-border-color:     lighten($gray-900, 7.5%) !default;
+// $table-dark-color:            $body-bg !default;
+$table-dark-color:            $body-color;
+
+// $table-caption-color:         $text-muted !default;
+
+
