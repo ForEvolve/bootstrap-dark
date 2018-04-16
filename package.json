@@ -29,8 +29,9 @@
   "devDependencies": {
     "autoprefixer": "^8.2.0",
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean-css": "^3.9.3",
+    "gulp-cli": "^2.0.1",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "*",
     "gulp-sass": "^4.0.1",
