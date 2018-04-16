@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-dark",
   "description": "A Bootstrap 4.1 Dark theme.",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "scripts": {
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
