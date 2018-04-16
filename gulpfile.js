@@ -29,15 +29,15 @@ gulp.task('build-theme', function () {
         .pipe(gulp.dest('dist/css/'))
 });
 
-gulp.task('watch', ['copy-bootstrap-js', 'build-theme'], function () {
-    gulp.watch(['scss/*.scss'], ['build-theme']);
-});
-
 gulp.task('copy-bootstrap-js', function () {
     return gulp
         .src(['node_modules/bootstrap/dist/js/*'])
         .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('default', ['copy-bootstrap-js', 'build-theme'], function () {
+gulp.task('watch', gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
+    gulp.watch(['scss/*.scss'], ['build-theme']);
+});
+
+gulp.task('default', gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
 });
