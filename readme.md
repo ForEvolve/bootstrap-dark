@@ -1,9 +1,12 @@
 # Bootstrap 4.1 Dark theme
 This is a Bootstrap 4.1 dark theme. 
 
-![Alpha 3 - preview](assets/images/alpha-3.png)
+![VSTS build badge](https://forevolve.visualstudio.com/_apis/public/build/definitions/c685c54e-c04f-4c62-9e82-db39a452f4d9/22/badge)
 
-This is a work in progress...
+## Alpha - preview
+*This is a work in progress...*
+
+![Alpha - preview](assets/images/alpha-3.png)
 
 ## How to use
 TODO: write a better guide...
