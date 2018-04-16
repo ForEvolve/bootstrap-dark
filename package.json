@@ -5,7 +5,9 @@
   "scripts": {
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
-    "watch": "npm-run-all --parallel gulp-watch browser-sync"
+    "watch": "npm-run-all --parallel gulp-watch browser-sync",
+    "version": "gulp && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
