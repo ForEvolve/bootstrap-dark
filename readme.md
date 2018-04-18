@@ -53,7 +53,7 @@ There is a few npm and gulp scripts.
 ### Contribute
 To contribute, feel free to contact me. 
 
-If you feel confident enough (or if the issue tracker is more populated and I forgot to update this section), feel free to submit a PR to the `dev` branch.
+If you feel confident enough (or if the issue tracker is more populated and I forgot to update this section), feel free to submit a PR.
 
 ## The project structure
 - `Assets` are the project assets (like the screenshot in the readme file).
