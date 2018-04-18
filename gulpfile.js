@@ -35,9 +35,15 @@ gulp.task('copy-bootstrap-js', function () {
         .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('watch', gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
-    gulp.watch(['scss/*.scss'], ['build-theme']);
+gulp.task('copy-dist-to-wwwroot', function () {
+    return gulp
+        .src(['dist/**/*'])
+        .pipe(gulp.dest('wwwroot/'));
 });
 
-gulp.task('default', gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
+gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
+    gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-wwwroot'));
+}));
+
+gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')), function () {
 });

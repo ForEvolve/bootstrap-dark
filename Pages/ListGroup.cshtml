@@ -1,0 +1,37 @@
+@page
+
+<div class="container-fluid mt-3 mb-3">
+    <div class="row">
+        <div class="col-12">
+            <h2>Lists</h2>
+        </div>
+        <div class="col-3 mt-4">
+            <h3>Unordered list</h3>
+            <ul class="list-group">
+                <li class="list-group-item active">Cras justo odio - active</li>
+                <li class="list-group-item disabled">Dapibus ac facilisis in - disabled</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+        <div class="col-3 mt-4">
+            <h3>Contextual classes</h3>
+            <ul class="list-group">
+                <li class="list-group-item">This is a list group item</li>
+                @foreach(var sufix in Bootstrap.Suffixes){
+                <li class="list-group-item list-group-item-@sufix">This is a @sufix list group item</li>
+                }
+            </ul>
+        </div>
+        <div class="col-3 mt-4">
+            <h3>Actions</h3>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">This is a default list group item</a>
+                @foreach(var sufix in Bootstrap.Suffixes){
+                <li class="list-group-item list-group-item-action list-group-item-@sufix">This is a @sufix list group item</li>
+                }
+            </div>
+        </div>
+    </div>
+</div>

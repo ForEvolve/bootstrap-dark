@@ -62,3 +62,7 @@ typings/
 
 # VS Code user-specific stuff
 .vscode/iisexpress.json
+
+# dotnet
+bin/
+obj/
