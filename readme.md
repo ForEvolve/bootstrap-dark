@@ -28,12 +28,12 @@ If you want to build the theme manually, modify it or even contribute, this sect
 1. Clone this repo
 1. Run `npm install`
 1. Run `dotnet restore`
+
+### Starting the project
+1. Run `dotnet run` or if you are using VS Code, `Start Debugging` will work.
 1. Run `npm run watch`
-1. Run `dotnet run`
 
-Browser-sync proxy should open in a browser at the following URI: `http://localhost:3002`.
-
-*See `dist/` for the generated css and js files.*
+Once you started both server and the watch command, the `browser-sync` proxy should open in a browser at the following URI: `http://localhost:3002`.
 
 ### Other build info
 There is a few npm and gulp scripts.
@@ -49,6 +49,21 @@ There is a few npm and gulp scripts.
 1. `copy-bootstrap-js` copy the bootstrap js files to the `dist/js` directory.
 1. `watch` execute `copy-bootstrap-js` then watch to rebuild the theme.
 1. `default` simply runs both `build-theme` and `copy-bootstrap-js`.
+
+### Contribute
+To contribute, feel free to contact me. 
+
+If you feel confident enough (or if the issue tracker is more populated and I forgot to update this section), feel free to submit a PR to the `dev` branch.
+
+## The project structure
+- `Assets` are the project assets (like the screenshot in the readme file).
+- `dist` are the redistributable files; if you want to copy/paste the files into your projects, that's the ones. They also include bootstrap JavaScript files, unaltered.
+- `Pages` are the Asp.Net Core Razor Pages. That's the preview. 
+  > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages!
+- `scss` are the source theme files.
+- `Services` are the web pages services; so far it's pretty thin.
+- `wwwroot` are the web assets; the `dist` files are copied there.
+- Other files (root): all the npm and asp.net core common files, license, readme, etc.
 
 ## References
 
