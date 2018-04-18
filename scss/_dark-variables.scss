@@ -65,7 +65,7 @@ $component-active-bg:         $primary;
 
 // List group
 
-$list-group-bg:                     $body-bg;
+$list-group-bg:                     rgba($body-bg, .05);
 $list-group-border-color:           rgba($white, .125);
 
 $list-group-hover-bg:               $gray-900;
