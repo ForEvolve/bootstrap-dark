@@ -1,0 +1,41 @@
+@page
+@{
+    ViewData["Title"] = "Cards";
+    var suffixes = new []{
+        "primary",
+        "secondary",
+        "success",
+        "info",
+        "warning",
+        "danger",
+        "light",
+        "dark",
+    };
+}
+
+<div class="container-fluid mt-3 mb-3">
+    <div class="row">
+    @foreach(var sufix in suffixes){
+        <div class="col-3 mt-3">
+            <div class="card bg-@sufix">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h4 class="card-title">@sufix card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                @foreach(var subsufix in suffixes) {
+                    <div class="card-body">
+                        <div class="card bg-@subsufix">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                                <h4 class="card-title">@sufix with inner @subsufix</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    </div>
+</div>
