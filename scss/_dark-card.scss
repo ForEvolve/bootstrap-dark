@@ -1,0 +1,17 @@
+.card.bg-light {
+    color: $dark;
+    border-color: $gray-400;
+
+    & > .card-header,
+    & > .card-footer {
+        border-color: $gray-400;
+    }
+
+    .card:not(.bg-light) {
+        color: $body-color;
+    }
+
+    .card.bg-light {
+        border-color: $gray-400;
+    }
+}
