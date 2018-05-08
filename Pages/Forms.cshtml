@@ -1,107 +1,8 @@
 @page
 
-<h2 class="mt-4 ml-3">Input group</h2>
 <div class="container-fluid mt-3 mb-3">
-    <div class="row mt-4">
-        <div class="col-3">
-            <div class="input-group">
-                <select class="custom-select">
-                    <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
-                </select>
-                <input class="form-control valid" type="text">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="input-group">
-                <input class="form-control valid" type="text">
-                <select class="custom-select">
-                    <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
-                </select>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <select class="custom-select">
-                        <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
-                    </select>
-                </div>
-                <input class="form-control valid" type="text">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="input-group">
-                <input class="form-control valid" type="text">
-                <div class="input-group-append">
-                    <select class="custom-select">
-                        <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-4">
-        <div class="col-3">
-            <div class="input-group">
-                <select class="custom-select disabled" disabled>
-                    <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
-                </select>
-                <input class="form-control valid" type="text">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="input-group">
-                <input class="form-control valid" type="text">
-                <select class="custom-select disabled" disabled>
-                    <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
-                </select>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <select class="custom-select disabled" disabled>
-                        <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
-                    </select>
-                </div>
-                <input class="form-control valid" type="text">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="input-group">
-                <input class="form-control valid" type="text">
-                <div class="input-group-append">
-                    <select class="custom-select disabled" disabled>
-                        <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <h2 class="mt-4">Custom select</h2>
     <div class="row mt-4">
         <div class="col-3">
             <select class="custom-select">
@@ -118,6 +19,108 @@
                     <option value="1">Item @i</option>
                 }
             </select>
+        </div>
+    </div>
+
+    <h2 class="mt-4">Input group</h2>
+    <div class="row mt-4">
+        <div class="col-3">
+            <div class="input-group">
+                <select class="custom-select">
+                    <option value="">Choose an item</option>
+                    @for (var i = 0; i < 10; i++){
+                        <option value="1">Item @i</option>
+                    }
+                </select>
+                <input class="form-control valid" type="text">
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-group">
+                <input class="form-control valid" type="text">
+                <select class="custom-select">
+                    <option value="">Choose an item</option>
+                    @for (var i = 0; i < 10; i++){
+                        <option value="1">Item @i</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <select class="custom-select">
+                        <option value="">Choose an item</option>
+                        @for (var i = 0; i < 10; i++){
+                            <option value="1">Item @i</option>
+                        }
+                    </select>
+                </div>
+                <input class="form-control valid" type="text">
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-group">
+                <input class="form-control valid" type="text">
+                <div class="input-group-append">
+                    <select class="custom-select">
+                        <option value="">Choose an item</option>
+                        @for (var i = 0; i < 10; i++){
+                            <option value="1">Item @i</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-3">
+            <div class="input-group">
+                <select class="custom-select disabled" disabled>
+                    <option value="">Choose an item</option>
+                    @for (var i = 0; i < 10; i++){
+                        <option value="1">Item @i</option>
+                    }
+                </select>
+                <input class="form-control valid" type="text">
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-group">
+                <input class="form-control valid" type="text">
+                <select class="custom-select disabled" disabled>
+                    <option value="">Choose an item</option>
+                    @for (var i = 0; i < 10; i++){
+                        <option value="1">Item @i</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <select class="custom-select disabled" disabled>
+                        <option value="">Choose an item</option>
+                        @for (var i = 0; i < 10; i++){
+                            <option value="1">Item @i</option>
+                        }
+                    </select>
+                </div>
+                <input class="form-control valid" type="text">
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="input-group">
+                <input class="form-control valid" type="text">
+                <div class="input-group-append">
+                    <select class="custom-select disabled" disabled>
+                        <option value="">Choose an item</option>
+                        @for (var i = 0; i < 10; i++){
+                            <option value="1">Item @i</option>
+                        }
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
 </div>
