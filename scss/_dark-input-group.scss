@@ -1,0 +1,12 @@
+.input-group {
+    & > .input-group-append {
+        & > .custom-select {
+            @include border-left-radius(0);
+        }
+    }
+    & > .input-group-prepend {
+        & > .custom-select {
+            @include border-right-radius(0);
+        }
+    }
+}
