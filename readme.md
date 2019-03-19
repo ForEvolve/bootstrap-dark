@@ -12,14 +12,15 @@ _This is a work in progress..._
 
 ## How to use
 
-TODO: write a better guide...
-
-The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
-Some builds are also available in the public npm repository.
+Official builds are available in the public npm repository.
 
 ```
 npm install @forevolve/bootstrap-dark --save
 ```
+
+The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
+
+> TODO: write a better guide...
 
 ## How to build
 
