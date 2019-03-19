@@ -5,3 +5,6 @@ $packagePath = 'package.json';
 $packageJson = Get-Content $packagePath -Raw | ConvertFrom-Json
 $packageJson.PSObject.Properties.Remove('publishConfig');
 $packageJson | ConvertTo-Json | Set-Content -Path $packagePath -Force
+
+# Delete the custom npm repo config
+Remove-Item -Path '.npmrc'
