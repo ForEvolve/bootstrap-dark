@@ -5,7 +5,7 @@
   "scripts": {
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
-    "browser-sync-proxy": "browser-sync start --proxy \"http://localhost:5000/\" --files \"wwwroot/css/*.css\"",
+    "browser-sync-proxy": "browser-sync start --proxy \"http://localhost:5000/\" --files \"app/wwwroot/css/*.css\"",
     "watch": "npm-run-all --parallel gulp-watch browser-sync-proxy"
   },
   "repository": {

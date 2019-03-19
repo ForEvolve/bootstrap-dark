@@ -38,7 +38,7 @@ If you want to build the theme manually, modify it or even contribute, this sect
 
 ### Starting the project
 
-1. Run `dotnet run` or if you are using VS Code, `Start Debugging` will work.
+1. Run `dotnet run` (from the _app_ directory) or if you are using VS Code, `Start Debugging` will work.
 1. Run `npm run watch`
 
 Once you started both server and the watch command, the `browser-sync` proxy should open in a browser at the following URI: `http://localhost:3002`.
