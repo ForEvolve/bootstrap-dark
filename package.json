@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-dark",
-  "description": "A Bootstrap 4.1 Dark theme.",
+  "description": "A Bootstrap 4 Dark theme.",
   "version": "1.0.0-alpha.6",
   "scripts": {
     "gulp-watch": "gulp watch",

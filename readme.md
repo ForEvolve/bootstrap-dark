@@ -1,6 +1,6 @@
-# Bootstrap 4.1 Dark theme
+# Bootstrap 4 Dark theme
 
-This is a Bootstrap 4.1 dark theme.
+This is a Bootstrap 4 dark theme.
 
 ![VSTS build badge](https://forevolve.visualstudio.com/_apis/public/build/definitions/c685c54e-c04f-4c62-9e82-db39a452f4d9/22/badge)
 
