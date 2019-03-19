@@ -38,7 +38,7 @@ gulp.task('copy-bootstrap-js', function () {
 gulp.task('copy-dist-to-wwwroot', function () {
     return gulp
         .src(['dist/**/*'])
-        .pipe(gulp.dest('wwwroot/'));
+        .pipe(gulp.dest('app/wwwroot/'));
 });
 
 gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
