@@ -14,10 +14,11 @@ _This is a work in progress..._
 
 TODO: write a better guide...
 
-For the initial development time, the package is deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
+The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
+Some builds are also available in the public npm repository.
 
 ```
-npm install bootstrap-dark --save
+npm install @forevolve/bootstrap-dark --save
 ```
 
 ## How to build
@@ -69,14 +70,15 @@ If you feel confident enough (or if the issue tracker is more populated and I fo
 
 ## The project structure
 
--   `Assets` are the project assets (like the screenshot in the readme file).
+-   `app` is the Asp.Net Core application that is used to test the theme. This directory is not packaged.
+    -   `Pages` are the Asp.Net Core Razor Pages. That's the preview.
+        > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages!
+    -   `Services` are the web pages services; so far it's pretty thin.
+    -   `wwwroot` are the web assets; the `dist` files are copied there.
+-   `assets` are the project assets (like the screenshot in the readme file).
 -   `dist` are the redistributable files; if you want to copy/paste the files into your projects, that's the ones. They also include bootstrap JavaScript files, unaltered.
--   `Pages` are the Asp.Net Core Razor Pages. That's the preview.
-    > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages!
 -   `scss` are the source theme files.
--   `Services` are the web pages services; so far it's pretty thin.
--   `wwwroot` are the web assets; the `dist` files are copied there.
--   Other files (root): all the npm and asp.net core common files, license, readme, etc.
+-   Other files (root): npm, license, readme, etc.
 
 ## References
 
@@ -86,7 +88,7 @@ If you feel confident enough (or if the issue tracker is more populated and I fo
 
 The following project applies `bootstrap-dark` to the bootstrap documentation site allowing deeper testing of the theme:
 
--   [Bootstrap 4.1 Dark theme docs](https://github.com/Carl-Hugo/bootstrap-dark-docs.git)
+-   [Bootstrap 4.1 Dark theme docs](https://github.com/ForEvolve/bootstrap-dark-docs.git)
 
 ## Special thanks
 
