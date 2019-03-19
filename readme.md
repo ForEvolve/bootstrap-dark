@@ -89,7 +89,7 @@ If you feel confident enough (or if the issue tracker is more populated and I fo
 
 The following project applies `bootstrap-dark` to the bootstrap documentation site allowing deeper testing of the theme:
 
--   [Bootstrap 4.1 Dark theme docs](https://github.com/ForEvolve/bootstrap-dark-docs.git)
+-   [Bootstrap 4 Dark theme docs](https://github.com/ForEvolve/bootstrap-dark-docs.git)
 
 ## Special thanks
 
