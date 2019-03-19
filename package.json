@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-dark",
   "description": "A Bootstrap 4.1 Dark theme.",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "scripts": {
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
@@ -23,22 +23,22 @@
   "author": "Carl-Hugo Marcotte",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.0",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "autoprefixer": "^8.2.0",
-    "browser-sync": "^2.23.6",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-clean-css": "^3.9.3",
+    "autoprefixer": "^8.6.5",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^3.10.0",
     "gulp-cli": "^2.0.1",
     "gulp-postcss": "^7.0.1",
-    "gulp-rename": "*",
-    "gulp-sass": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
     "gulp-scss-lint": "^0.6.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "npm-run-all": "^4.1.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "npm-run-all": "^4.1.5",
     "npm-version": "^1.1.0"
   }
 }
