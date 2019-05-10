@@ -50,10 +50,10 @@ $link-color:                darken($body-color, 15%);
 $link-hover-color:          darken($link-color, 15%);
 //$link-hover-decoration:     underline;
 
-$card-border-color:                 rgba($white, .125);
-$card-cap-bg:                       rgba($white, .03);
-//$card-bg:                           #191d21;
-$card-bg: $gray-900;
+$card-border-color:         rgba($white, .125);
+$card-cap-bg:               rgba($white, .03);
+$card-color:                $gray-200;
+$card-bg:                   $gray-900;
 
 $nav-tabs-border-color:             rgba($white, .125);
 $nav-tabs-link-hover-border-color:  $gray-700 $gray-700 $nav-tabs-border-color;
