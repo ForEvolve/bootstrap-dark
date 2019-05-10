@@ -46,7 +46,9 @@ $yiq-text-dark: $gray-900;
 $yiq-text-light: $gray-400;
 
 $link-color:                darken($body-color, 15%);
+// $link-decoration:           none;
 $link-hover-color:          darken($link-color, 15%);
+//$link-hover-decoration:     underline;
 
 $card-border-color:                 rgba($white, .125);
 $card-cap-bg:                       rgba($white, .03);
