@@ -24,12 +24,12 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.5",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-cli": "^2.0.1",
