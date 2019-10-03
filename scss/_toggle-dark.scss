@@ -15,7 +15,7 @@ html {
   -webkit-tap-highlight-color: rgba($black, 0); // 5
 }
 
-body.bs-dark {
+body.bootstrap-dark {
   margin: 0; // 1
   font-family: $font-family-base;
   @include font-size($font-size-base);
@@ -26,7 +26,7 @@ body.bs-dark {
   background-color: $body-bg; // 2
 }
 
-.bs-dark {
+.bootstrap-dark {
   @import "node_modules/bootstrap/scss/root";
   @import "node_modules/bootstrap/scss/reboot";
   @import "node_modules/bootstrap/scss/type";

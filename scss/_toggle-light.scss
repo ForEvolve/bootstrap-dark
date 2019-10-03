@@ -2,7 +2,7 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-body.bs-light {
+body.bootstrap {
   margin: 0; // 1
   font-family: $font-family-base;
   @include font-size($font-size-base);
@@ -13,7 +13,7 @@ body.bs-light {
   background-color: $body-bg; // 2
 }
 
-.bs-light {
+.bootstrap {
   @import "node_modules/bootstrap/scss/root";
   @import "node_modules/bootstrap/scss/reboot";
   @import "node_modules/bootstrap/scss/type";
