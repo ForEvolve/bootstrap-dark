@@ -41,7 +41,7 @@ gulp.task('copy-dist-to-wwwroot', function () {
         .pipe(gulp.dest('app/wwwroot/'));
 });
 
-gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', 'build-theme'), function () {
+gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')), function () {
     gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-wwwroot'));
 }));
 
