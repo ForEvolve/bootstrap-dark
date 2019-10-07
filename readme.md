@@ -1,6 +1,6 @@
 # Bootstrap 4 Dark theme
 
-This is a Bootstrap 4 dark theme that support togging dark/light themes as well.
+Bootstrap 4 dark theme that supports togging dark/light themes as well. There is no fluff, it changes the color of Bootstrap and that's it, no new thing to learn or unlearn, just Bootstrap, but Dark!
 
 ![VSTS build badge](https://forevolve.visualstudio.com/_apis/public/build/definitions/c685c54e-c04f-4c62-9e82-db39a452f4d9/22/badge)
 
@@ -8,7 +8,7 @@ This is a Bootstrap 4 dark theme that support togging dark/light themes as well.
 
 ![Alpha - preview](assets/images/alpha-3.png)
 
-_This is a work in progress_
+_This is a work in progress, if you like it and have some spare time, contributions are welcome._
 
 ## Versioning
 
@@ -33,7 +33,7 @@ npm install @forevolve/bootstrap-dark --save
 The package contains the content of the `dist` directory which includes the Bootstrap JavaScript files, for convenience, and the Bootstrap Dark CSS files.
 To load the dark theme, `<link>` the `bootstrap-dark.css` or the `bootstrap-dark.min.css` instead of the `bootstrap[.min].css` file.
 
-### Dark/Light toogle
+### Dark/Light toggle
 
 You can now `<link>` both the `toggle-bootstrap.css` and the `toggle-bootstrap-dark.css` files to allow toggling the normal/dark theme based on your page body.
 
@@ -103,20 +103,6 @@ If you feel confident enough (or if the issue tracker is more populated and I fo
 -   `scss` are the source theme files.
 -   Other files (root): npm, license, readme, etc.
 
-## References
-
--   [Bootstrap](https://github.com/twbs/bootstrap/)
-
-## More darkness!
-
-The following project applies `bootstrap-dark` to the bootstrap documentation site allowing deeper testing of the theme:
-
--   [Bootstrap 4 Dark theme docs](https://github.com/ForEvolve/bootstrap-dark-docs.git)
-
-## Special thanks
-
-I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.com/kit/) by [Alexander Rechsteiner](https://github.com/arechsteiner) at [Hacker Themes](https://hackerthemes.com). This allows me to publish a lighter version of the theme; making it easier to be used (compared to the full Bootstrap Jekyll docs).
-
 ## Patch notes
 
 ### 1.0.0-alpha.844
@@ -130,3 +116,17 @@ I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.c
 ### 1.0.0-alpha.774 & 1.0.0-alpha.723
 
 -   Initial dark theme
+
+## References
+
+-   [Bootstrap](https://github.com/twbs/bootstrap/)
+
+## More darkness!
+
+The following project applies `bootstrap-dark` to the bootstrap documentation site allowing deeper testing of the theme:
+
+-   [Bootstrap 4 Dark theme docs](https://github.com/ForEvolve/bootstrap-dark-docs.git)
+
+## Special thanks
+
+I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.com/kit/) by [Alexander Rechsteiner](https://github.com/arechsteiner) at [Hacker Themes](https://hackerthemes.com). This allows me to publish a lighter version of the theme; making it easier to be used (compared to the full Bootstrap Jekyll docs).
