@@ -112,7 +112,9 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 ## Patch notes
 
-### 1.0.0-alpha.844
+Since CI build numbers are automated, it is hard to know for sure what the next deployed build number will be, so the `(latest)` version represent that version.
+
+### (latest)
 
 -   Update the project description, the "How to use" section, and add the "Patch notes" section
 
