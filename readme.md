@@ -87,9 +87,16 @@ There is a few npm and gulp scripts.
 
 ### Contribute
 
-To contribute, feel free to contact me.
+To contribute, start by opening an issue or reply on an existing issue so we can discuss your feature or bug to find the best way to approach it.
 
-If you feel confident enough (or if the issue tracker is more populated and I forgot to update this section), feel free to submit a PR.
+Once we settled on a strategy, you can then Fork/Code/Open a PR.
+
+-   Please add yourself in the `package.json` `contributors` array.
+-   Please keep PR focused on a single feature, it is easier for everyone this way and it helps keep the conversation focused. I way prefer multiple smaller PR than a single huge one.
+
+Thanks in advance for your contribution.
+
+See [Contributing to ForEvolve open source projects](https://github.com/ForEvolve/Toc/blob/master/CONTRIBUTING.md) and [Contributor Covenant Code of Conduct](https://github.com/ForEvolve/Toc/blob/master/CODE_OF_CONDUCT.md) for more information.
 
 ## The project structure
 
