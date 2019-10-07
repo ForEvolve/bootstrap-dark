@@ -1,26 +1,48 @@
 # Bootstrap 4 Dark theme
 
-This is a Bootstrap 4 dark theme.
+This is a Bootstrap 4 dark theme that support togging dark/light themes as well.
 
 ![VSTS build badge](https://forevolve.visualstudio.com/_apis/public/build/definitions/c685c54e-c04f-4c62-9e82-db39a452f4d9/22/badge)
 
 ## Alpha - preview
 
-_This is a work in progress..._
-
 ![Alpha - preview](assets/images/alpha-3.png)
+
+_This is a work in progress_
+
+## Versioning
+
+SemVer is used to keep things easy for everyone.
+
+### Prerelease
+
+Until the project reaches an official version `1.0.0`, the pre-release `-alpha.[build number]` suffix is added to the version number.
+
+Since this is only a dark version of Bootstrap, there should not be many breaking changes worth investing in versioning. So don't worry too much about compatibility, updating to the latest `alpha` release should be safe enough.
+
+If this is a major concerns to you, feel free to say so, and I'll see what I can do about it.
 
 ## How to use
 
-Official builds are available in the public npm repository.
+Official builds are available in the public npm registry.
 
 ```
 npm install @forevolve/bootstrap-dark --save
 ```
 
-The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
+The package contains the content of the `dist` directory which includes the Bootstrap JavaScript files, for convenience, and the Bootstrap Dark CSS files.
+To load the dark theme, `<link>` the `bootstrap-dark.css` or the `bootstrap-dark.min.css` instead of the `bootstrap[.min].css` file.
 
-> TODO: write a better guide...
+### Dark/Light toogle
+
+You can now `<link>` both the `toggle-bootstrap.css` and the `toggle-bootstrap-dark.css` files to allow toggling the normal/dark theme based on your page body.
+
+-   To display the original Bootstrap color, apply the `bootstrap` class on your body, like `<body class="bootstrap">`.
+-   To display the Bootstrap Dark theme, apply the `bootstrap-dark` class on your body, like `<body class="bootstrap-dark">`.
+
+### CI builds
+
+The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
 
 ## How to build
 
@@ -94,3 +116,17 @@ The following project applies `bootstrap-dark` to the bootstrap documentation si
 ## Special thanks
 
 I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.com/kit/) by [Alexander Rechsteiner](https://github.com/arechsteiner) at [Hacker Themes](https://hackerthemes.com). This allows me to publish a lighter version of the theme; making it easier to be used (compared to the full Bootstrap Jekyll docs).
+
+## Patch notes
+
+### 1.0.0-alpha.844
+
+-   Update the project description, the "How to use" section, and add the "Patch notes" section
+
+### 1.0.0-alpha.842
+
+-   Add support for dark/light toggling
+
+### 1.0.0-alpha.774 & 1.0.0-alpha.723
+
+-   Initial dark theme
