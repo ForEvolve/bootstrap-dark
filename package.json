@@ -21,6 +21,13 @@
     "dark-theme"
   ],
   "author": "Carl-Hugo Marcotte",
+  "contributors": [
+    { 
+      "name" : "Maciej Krüger", 
+      "email" : "mkg20001@gmail.com", 
+      "url" : "https://mkg20001.io"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",
