@@ -27,6 +27,11 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.14.7"
   },
+  "files": [
+    "scss/**/*.scss",
+    "dist/**/*",
+    "assets/**/*"
+  ],
   "devDependencies": {
     "autoprefixer": "^8.6.5",
     "browser-sync": "^2.26.5",
