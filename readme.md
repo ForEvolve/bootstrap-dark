@@ -85,7 +85,21 @@ There is a few npm and gulp scripts.
 1. `watch` execute `copy-bootstrap-js` then watch to rebuild the theme.
 1. `default` simply runs both `build-theme` and `copy-bootstrap-js`.
 
-### Contribute
+## The project structure
+
+-   `app` is the Asp.Net Core application that is used to test the theme. This directory is not packaged.
+    -   `Pages` are the Asp.Net Core Razor Pages. That's the preview.
+        > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages! Moreover, it is open source and cross-platform.
+        >
+        > If you think that something else would be better, feel free to open an issue about it; I would not mind switching to another technology (see the Contribute section below).
+    -   `Services` are the web pages services; so far it's pretty thin.
+    -   `wwwroot` are the web assets; the `dist` files are copied there.
+-   `assets` are the project assets (like the screenshot in the readme file).
+-   `dist` are the redistributable files; if you want to copy/paste the files into your projects, that's the ones. They also include bootstrap JavaScript files, unaltered.
+-   `scss` are the source theme files.
+-   Other files (root): npm, license, readme, etc.
+
+## Contribute
 
 To contribute, start by opening an issue or reply on an existing issue so we can discuss your feature or bug to find the best way to approach it.
 
@@ -98,25 +112,13 @@ Thanks in advance for your contribution.
 
 See [Contributing to ForEvolve open source projects](https://github.com/ForEvolve/Toc/blob/master/CONTRIBUTING.md) and [Contributor Covenant Code of Conduct](https://github.com/ForEvolve/Toc/blob/master/CODE_OF_CONDUCT.md) for more information.
 
-## The project structure
-
--   `app` is the Asp.Net Core application that is used to test the theme. This directory is not packaged.
-    -   `Pages` are the Asp.Net Core Razor Pages. That's the preview.
-        > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages!
-    -   `Services` are the web pages services; so far it's pretty thin.
-    -   `wwwroot` are the web assets; the `dist` files are copied there.
--   `assets` are the project assets (like the screenshot in the readme file).
--   `dist` are the redistributable files; if you want to copy/paste the files into your projects, that's the ones. They also include bootstrap JavaScript files, unaltered.
--   `scss` are the source theme files.
--   Other files (root): npm, license, readme, etc.
-
-## Patch notes
+## Release notes
 
 Since CI build numbers are automated, it is hard to know for sure what the next deployed build number will be, so the `(latest)` version represent that version.
 
 ### (latest)
 
--   Update the project description, the "How to use" section, and add the "Patch notes" section
+-   Update the project description, the "How to use" section, and add the "Release notes" section
 
 ### 1.0.0-alpha.842
 
