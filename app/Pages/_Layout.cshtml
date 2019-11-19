@@ -1,5 +1,11 @@
 @{
     var title = ViewData["Title"] == null ? "Dark Bootstrap 4.1 theme" : $"{ViewData["Title"]} - Dark Bootstrap 4.1 theme";
+    var loadToggleCss = false;
+    var bodyCssClass = "";
+    if (loadToggleCss)
+    {
+        bodyCssClass = "bootstrap-dark";
+    }
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +16,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Custom built theme - This already includes Bootstrap 4 -->
-    <link rel="stylesheet" href="~/css/bootstrap-dark.css">
+    @if(loadToggleCss)
+    {
+        <link rel="stylesheet" href="~/css/toggle-bootstrap.min.css">
+        <link rel="stylesheet" href="~/css/toggle-bootstrap-dark.min.css">
+        <link rel="stylesheet" href="~/css/toggle-bootstrap-print.min.css">
+    }
+    else
+    {
+        <link rel="stylesheet" href="~/css/bootstrap-dark.css">
+    }
 </head>
-<body>
+<body class="@bodyCssClass">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,12 +1,9 @@
 @import "node_modules/bootstrap/scss/functions";
-
 @import "node_modules/bootstrap/scss/variables";
 
-@import 'dark-variables';
-
+@import "dark-variables";
 @import "node_modules/bootstrap/scss/mixins";
-
-@import 'dark-mixins';
+@import "dark-mixins";
 
 html {
   font-family: sans-serif; // 2
@@ -35,7 +32,7 @@ body.bootstrap-dark {
   @import "node_modules/bootstrap/scss/grid";
   @import "node_modules/bootstrap/scss/tables";
 
-  @import 'dark-tables';
+  @import "dark-tables";
 
   @import "node_modules/bootstrap/scss/forms";
   @import "node_modules/bootstrap/scss/buttons";
@@ -44,7 +41,7 @@ body.bootstrap-dark {
   @import "node_modules/bootstrap/scss/button-group";
   @import "node_modules/bootstrap/scss/input-group";
 
-  @import 'dark-input-group';
+  @import "dark-input-group";
 
   @import "node_modules/bootstrap/scss/custom-forms";
   @import "node_modules/bootstrap/scss/nav";
@@ -66,7 +63,6 @@ body.bootstrap-dark {
   @import "node_modules/bootstrap/scss/carousel";
   @import "node_modules/bootstrap/scss/spinners";
   @import "node_modules/bootstrap/scss/utilities";
-  @import "node_modules/bootstrap/scss/print";
 
-  @import 'dark-styles';
+  @import "dark-styles";
 }
