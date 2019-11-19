@@ -2,6 +2,7 @@
   "name": "@forevolve/bootstrap-dark",
   "description": "A Bootstrap 4 Dark theme.",
   "version": "1.0.0-alpha.0",
+  "prettier": "@forevolve/prettier-config",
   "scripts": {
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
@@ -22,10 +23,10 @@
   ],
   "author": "Carl-Hugo Marcotte",
   "contributors": [
-    { 
-      "name" : "Maciej Krüger", 
-      "email" : "mkg20001@gmail.com", 
-      "url" : "https://mkg20001.io"
+    {
+      "name": "Maciej Krüger",
+      "email": "mkg20001@gmail.com",
+      "url": "https://mkg20001.io"
     }
   ],
   "license": "MIT",
@@ -40,6 +41,7 @@
     "assets/**/*"
   ],
   "devDependencies": {
+    "@forevolve/prettier-config": "^2.0.1",
     "autoprefixer": "^8.6.5",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.0",
