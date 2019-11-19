@@ -31,7 +31,13 @@ npm install @forevolve/bootstrap-dark --save
 ```
 
 The package contains the content of the `dist` directory which includes the Bootstrap JavaScript files, for convenience, and the Bootstrap Dark CSS files.
-To load the dark theme, `<link>` the `bootstrap-dark.css` or the `bootstrap-dark.min.css` instead of the `bootstrap[.min].css` file.
+To load the dark theme, `<link>` the `bootstrap-dark.css` or the `bootstrap-dark.min.css` instead of the `bootstrap[.min].css` file. You can load the bundled JavaScript files, the original ones or the file from the CDN of your choosing.
+
+**Example:**
+
+```html
+<link rel="stylesheet" href="/css/bootstrap-dark.min.css" />
+```
 
 ### Dark/Light toggle
 
@@ -39,6 +45,16 @@ You can now `<link>` both the `toggle-bootstrap.css` and the `toggle-bootstrap-d
 
 -   To display the original Bootstrap color, apply the `bootstrap` class on your body, like `<body class="bootstrap">`.
 -   To display the Bootstrap Dark theme, apply the `bootstrap-dark` class on your body, like `<body class="bootstrap-dark">`.
+
+If you want to support print, load the `toggle-bootstrap-print.css` or `toggle-bootstrap-print.min.css` file after the others.
+
+**Example:**
+
+```html
+<link rel="stylesheet" href="/css/toggle-bootstrap.min.css" />
+<link rel="stylesheet" href="/css/toggle-bootstrap-dark.min.css" />
+<link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
+```
 
 ### CI builds
 
@@ -119,6 +135,17 @@ Since CI build numbers are automated, it is hard to know for sure what the next 
 ### (latest)
 
 -   Update the project description, the "How to use" section, and add the "Release notes" section
+
+### 1.0.0-alpha.???
+
+-   Move the print import out of the dark/light body class. This should fix bugs like `.navbar` being `display: none` by default when loading the `.min.css` stylesheet.
+-   A new file is introduced: `toggle-bootstrap-print[.min].css`. This stylesheet applies the print styles from bootstrap and has been extracted so it is included only once (not once with the `toggle-bootstrap.css` and once with the `toggle-bootstrap-dark.css`). If you don't support print, you can omit this file; if you do, include it last. For example:
+
+    ```html
+    <link rel="stylesheet" href="/css/toggle-bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/toggle-bootstrap-dark.min.css" />
+    <link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
+    ```
 
 ### 1.0.0-alpha.842
 
