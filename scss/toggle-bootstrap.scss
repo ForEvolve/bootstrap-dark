@@ -47,4 +47,9 @@ body.bootstrap {
     @import 'node_modules/bootstrap/scss/carousel';
     @import 'node_modules/bootstrap/scss/spinners';
     @import 'node_modules/bootstrap/scss/utilities';
+
+    .navbar-dark-light {
+        @extend .bg-light;
+        @extend .navbar-light;
+    }
 }

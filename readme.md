@@ -132,11 +132,13 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know for sure what the next deployed build number will be, so the `(latest)` version represent that version.
 
-### (latest)
+### 1.0.0-alpha.(latest)
 
--   Update the project description, the "How to use" section, and add the "Release notes" section
+-   Add support for `.navbar-dark-light`; a `.navbar` that:
+    -   When `body.bootstrap`, the navbar becomes `.bg-light` and `.navbar-light` when `body.bootstrap`.
+    -   When `body.bootstrap-dark`, the navbar becomes `.bg-dark` and `.navbar-dark` when `body.bootstrap`.
 
-### 1.0.0-alpha.???
+### 1.0.0-alpha.863
 
 -   Move the print import out of the dark/light body class. This should fix bugs like `.navbar` being `display: none` by default when loading the `.min.css` stylesheet.
 -   A new file is introduced: `toggle-bootstrap-print[.min].css`. This stylesheet applies the print styles from bootstrap and has been extracted so it is included only once (not once with the `toggle-bootstrap.css` and once with the `toggle-bootstrap-dark.css`). If you don't support print, you can omit this file; if you do, include it last. For example:
@@ -146,6 +148,10 @@ Since CI build numbers are automated, it is hard to know for sure what the next 
     <link rel="stylesheet" href="/css/toggle-bootstrap-dark.min.css" />
     <link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
     ```
+
+### 1.0.0-alpha.845
+
+-   Update the project description, the "How to use" section, and add the "Release notes" section
 
 ### 1.0.0-alpha.842
 
