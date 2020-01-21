@@ -56,6 +56,18 @@ If you want to support print, load the `toggle-bootstrap-print.css` or `toggle-b
 <link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
 ```
 
+### Themeable .navbar
+
+When using the `toggle-*` stylesheets, you can create `.navbar` that uses the current theme. Light when `<body class="bootstrap">` and dark when `<body class="bootstrap-dark">`.
+
+Example, instead of `navbar-light bg-light` or `navbar-dark bg-dark`, use `.navbar-themed`, like this:
+
+```html
+<nav class="navbar navbar-expand-lg navbar-themed">
+    ...
+</nav>
+```
+
 ### CI builds
 
 The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
@@ -134,9 +146,9 @@ Since CI build numbers are automated, it is hard to know for sure what the next 
 
 ### 1.0.0-alpha.(latest)
 
--   Add support for `.navbar-dark-light`; a `.navbar` that:
-    -   When `body.bootstrap`, the navbar becomes `.bg-light` and `.navbar-light` when `body.bootstrap`.
-    -   When `body.bootstrap-dark`, the navbar becomes `.bg-dark` and `.navbar-dark` when `body.bootstrap`.
+-   Add a themeable `.navbar` component, using the css class `.navbar-themed`, that:
+    -   When `body.bootstrap`, the navbar becomes `.bg-light` and `.navbar-light`.
+    -   When `body.bootstrap-dark`, the navbar becomes `.bg-dark` and `.navbar-dark`.
 
 ### 1.0.0-alpha.863
 
