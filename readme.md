@@ -56,6 +56,18 @@ If you want to support print, load the `toggle-bootstrap-print.css` or `toggle-b
 <link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
 ```
 
+### Themeable .navbar
+
+When using the `toggle-*` stylesheets, you can create `.navbar` that uses the current theme. Light when `<body class="bootstrap">` and dark when `<body class="bootstrap-dark">`.
+
+Example, instead of `navbar-light bg-light` or `navbar-dark bg-dark`, use `.navbar-themed`, like this:
+
+```html
+<nav class="navbar navbar-expand-lg navbar-themed">
+    ...
+</nav>
+```
+
 ### CI builds
 
 The CI builds are deployed to the following custom npm registry: <https://www.myget.org/F/forevolve/npm/>.
@@ -132,11 +144,13 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know for sure what the next deployed build number will be, so the `(latest)` version represent that version.
 
-### (latest)
+### 1.0.0-alpha.(latest)
 
--   Update the project description, the "How to use" section, and add the "Release notes" section
+-   Add a themeable `.navbar` component, using the css class `.navbar-themed`, that:
+    -   When `body.bootstrap`, the navbar becomes `.bg-light` and `.navbar-light`.
+    -   When `body.bootstrap-dark`, the navbar becomes `.bg-dark` and `.navbar-dark`.
 
-### 1.0.0-alpha.???
+### 1.0.0-alpha.863
 
 -   Move the print import out of the dark/light body class. This should fix bugs like `.navbar` being `display: none` by default when loading the `.min.css` stylesheet.
 -   A new file is introduced: `toggle-bootstrap-print[.min].css`. This stylesheet applies the print styles from bootstrap and has been extracted so it is included only once (not once with the `toggle-bootstrap.css` and once with the `toggle-bootstrap-dark.css`). If you don't support print, you can omit this file; if you do, include it last. For example:
@@ -146,6 +160,10 @@ Since CI build numbers are automated, it is hard to know for sure what the next 
     <link rel="stylesheet" href="/css/toggle-bootstrap-dark.min.css" />
     <link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
     ```
+
+### 1.0.0-alpha.845
+
+-   Update the project description, the "How to use" section, and add the "Release notes" section
 
 ### 1.0.0-alpha.842
 
