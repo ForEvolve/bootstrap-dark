@@ -50,6 +50,11 @@ $link-color:                darken($body-color, 15%);
 $link-hover-color:          darken($link-color, 15%);
 //$link-hover-decoration:     underline;
 
+
+// Utilities (borders)
+$border-color: $dark;
+
+// Cards
 $card-border-color:         rgba($white, .125);
 $card-cap-bg:               rgba($white, .03);
 $card-color:                $gray-200;
@@ -118,8 +123,9 @@ $close-text-shadow:             0 1px 0 $black;
 // $table-accent-bg:             rgba($black, .05) !default;
 // $table-hover-bg:              rgba($black, .075) !default;
 // $table-active-bg:             $table-hover-bg !default;
-
-// $table-border-color:          $gray-300 !default;
+$table-color:                 $body-color;
+$table-border-color:          $border-color;
+$table-hover-color:           $table-color;
 
 // $table-head-bg:               $gray-200 !default;
 // $table-head-color:            $gray-700 !default;
@@ -135,5 +141,5 @@ $table-dark-color:            $gray-300;
 
 
 // Jumbotron
-$jumbotron-padding:                 2rem !default;
-$jumbotron-bg:                      $gray-800 !default;
+$jumbotron-bg:                      $gray-800;
+
