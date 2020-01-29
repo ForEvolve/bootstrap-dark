@@ -84,8 +84,8 @@ If you want to build the theme manually, modify it or even contribute, this sect
 ### Getting started
 
 1. Clone this repo
-1. Go to the _app_ directory (`cd app`)
 1. Run `npm install`
+1. Go to the _app_ directory (`cd app`)
 1. Run `dotnet restore`
 
 ### Starting the project
@@ -142,9 +142,20 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 ## Release notes
 
-Since CI build numbers are automated, it is hard to know for sure what the next deployed build number will be, so the `(latest)` version represent that version.
+Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
 ### 1.0.0-alpha.(latest)
+
+-   Utilities (borders)
+    -   Update the default `$border-color` to `$dark`
+-   Tables
+    -   Enforce that `$table-border-color` is based on the new `$border-color`
+    -   Enforce that `$table-color` is based on `$body-color`
+    -   Enforce that `$table-hover-color` is based on `$table-color`
+-   Jumbotron
+    -   The `$jumbotron-bg` color is now used
+
+### 1.0.0-alpha.888
 
 -   Add a themeable `.navbar` component, using the css class `.navbar-themed`, that:
     -   When `body.bootstrap`, the navbar becomes `.bg-light` and `.navbar-light`.
