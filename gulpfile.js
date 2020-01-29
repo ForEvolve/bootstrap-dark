@@ -45,5 +45,4 @@ gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('b
     gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-wwwroot'));
 }));
 
-gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')), function () {
-});
+gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')));
