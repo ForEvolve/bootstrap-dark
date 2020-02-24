@@ -144,7 +144,11 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
-### 1.0.0-alpha.(latest)
+### 1.0.0-alpha.902 (latest)
+
+-   Update `<hr />` color
+
+### 1.0.0-alpha.899
 
 -   Utilities (borders)
     -   Update the default `$border-color` to `$dark`
