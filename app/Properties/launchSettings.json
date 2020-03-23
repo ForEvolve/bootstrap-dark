@@ -2,11 +2,11 @@
     "profiles": {
         "bootstrap-dark": {
             "commandName": "Project",
-            "launchBrowser": true,
+            "launchBrowser": false,
             "environmentVariables": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "applicationUrl": "http://localhost:5000"
+            "applicationUrl": "http://localhost:7051"
         }
     }
 }
