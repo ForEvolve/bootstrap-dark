@@ -145,3 +145,14 @@ $jumbotron-bg:                      $gray-800;
 
 // HR
 $hr-border-color:             rgba($white, .1);
+
+
+// Toasts
+//$toast-color:                       null !default;
+$toast-background-color:            rgba($black, .85);
+$toast-border-color:                rgba(255, 255, 255, .1);
+$toast-box-shadow:                  0 .25rem .75rem rgba($white, .1);
+
+$toast-header-color:                $gray-400;
+$toast-header-background-color:     rgba($black, .85);
+$toast-header-border-color:         rgba(255, 255, 255, .05);
