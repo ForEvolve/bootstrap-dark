@@ -156,3 +156,22 @@ $toast-box-shadow:                  0 .25rem .75rem rgba($white, .1);
 $toast-header-color:                $gray-400;
 $toast-header-background-color:     rgba($black, .85);
 $toast-header-border-color:         rgba(255, 255, 255, .05);
+
+// Dropdowns
+//
+$dropdown-color:                    $body-color;
+$dropdown-bg:                       $black;
+$dropdown-border-color:             rgba($white, .15);
+$dropdown-divider-bg:               $gray-800;
+$dropdown-box-shadow:               0 .5rem 1rem rgba($white, .175);
+
+$dropdown-link-color:               $gray-100;
+$dropdown-link-hover-color:         lighten($gray-100, 5%);
+$dropdown-link-hover-bg:            $gray-900;
+
+$dropdown-link-active-color:        $component-active-color;
+$dropdown-link-active-bg:           $component-active-bg;
+
+$dropdown-link-disabled-color:      $gray-400;
+
+$dropdown-header-color:             $gray-400;
