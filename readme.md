@@ -149,6 +149,15 @@ Since CI build numbers are automated, it is hard to know in advance what the nex
 
 ### 1.0.0-alpha.? (latest)
 
+Darken the following elements:
+
+-   Dropdown
+-   Select
+-   Breadcrumb
+-   Pagination
+
+### 1.0.0-alpha.974 (latest)
+
 -   Update Bootstrap to 4.4.1
 -   Update other dependencies
 
