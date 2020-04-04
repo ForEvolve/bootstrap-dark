@@ -3,6 +3,9 @@
 Bootstrap 4.3.1 dark theme that supports togging dark/light themes as well. There is no fluff, it changes the color of Bootstrap and that's it, no new thing to learn or unlearn, just Bootstrap, but Dark!
 
 ![VSTS build badge](https://forevolve.visualstudio.com/_apis/public/build/definitions/c685c54e-c04f-4c62-9e82-db39a452f4d9/22/badge)
+[![npm](https://img.shields.io/npm/v/@forevolve/bootstrap-dark)](https://www.npmjs.com/package/@forevolve/bootstrap-dark)
+[![peerDependencies Status](https://img.shields.io/david/peer/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=peer)
+[![devDependency Status](https://img.shields.io/david/dev/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=dev)
 
 ## Alpha - preview
 
@@ -145,6 +148,11 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
 ### 1.0.0-alpha.? (latest)
+
+-   Update Bootstrap to 4.4.1
+-   Update other dependencies
+
+### 1.0.0-alpha.937 (latest)
 
 -   Darken Toasts
 
