@@ -184,3 +184,22 @@ $dropdown-header-color:             $gray-400;
 $breadcrumb-bg:                     $gray-800;
 $breadcrumb-divider-color:          $gray-400;
 $breadcrumb-active-color:           $gray-400;
+
+// Pagination
+$pagination-color:                  $link-color;
+$pagination-bg:                     $black;
+$pagination-border-color:           $gray-700;
+
+$pagination-focus-box-shadow:       $input-btn-focus-box-shadow;
+
+$pagination-hover-color:            $link-hover-color;
+$pagination-hover-bg:               $gray-800;
+$pagination-hover-border-color:     $gray-700;
+
+$pagination-active-color:           $component-active-color;
+$pagination-active-bg:              $component-active-bg;
+$pagination-active-border-color:    $pagination-active-bg;
+
+$pagination-disabled-color:         $gray-400;
+$pagination-disabled-bg:            $black;
+$pagination-disabled-border-color:  $gray-700;
