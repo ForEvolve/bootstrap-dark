@@ -149,6 +149,12 @@ Since CI build numbers are automated, it is hard to know in advance what the nex
 
 ### 1.0.0-alpha.? (latest)
 
+-   Remove `p a` `text-decoration: underline;`
+    -   This was conflicting with `.btn` in `p`.
+    -   Moreover, Bootstrap does not implement such a thing so bootstrap-dark should not either.
+
+### 1.0.0-alpha.978
+
 Darken the following elements:
 
 -   Dropdown
@@ -156,12 +162,12 @@ Darken the following elements:
 -   Breadcrumb
 -   Pagination
 
-### 1.0.0-alpha.974 (latest)
+### 1.0.0-alpha.974
 
 -   Update Bootstrap to 4.4.1
 -   Update other dependencies
 
-### 1.0.0-alpha.937 (latest)
+### 1.0.0-alpha.937
 
 -   Darken Toasts
 
