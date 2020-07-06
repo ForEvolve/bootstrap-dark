@@ -1,0 +1,5 @@
+.was-validated {
+    @each $state, $data in $form-validation-states {
+        @include form-validation-state($state, map-get($data, color), map-get($data, icon));
+    }
+}

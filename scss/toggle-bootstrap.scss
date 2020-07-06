@@ -1,6 +1,8 @@
 @import 'node_modules/bootstrap/scss/functions';
 @import 'node_modules/bootstrap/scss/variables';
+
 @import 'node_modules/bootstrap/scss/mixins';
+@import 'mixins-overrides';
 
 body.bootstrap {
     margin: 0; // 1
@@ -21,7 +23,10 @@ body.bootstrap {
     @import 'node_modules/bootstrap/scss/code';
     @import 'node_modules/bootstrap/scss/grid';
     @import 'node_modules/bootstrap/scss/tables';
+
     @import 'node_modules/bootstrap/scss/forms';
+    @import 'form-overrides';
+
     @import 'node_modules/bootstrap/scss/buttons';
     @import 'node_modules/bootstrap/scss/transitions';
     @import 'node_modules/bootstrap/scss/dropdown';
