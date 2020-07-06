@@ -1,0 +1,22 @@
+@mixin form-validation-state-selector($state) {
+    @if (contains-was-validated(nth(&, 1))) {
+        @if ($state == 'valid' or $state == 'invalid') {
+            #{if(&, "&", "")}:#{$state},
+            #{if(&, '&', '')}.is-#{$state} {
+                @content;
+            }
+        } @else {
+            #{if(&, '&', '')}.is-#{$state} {
+                @content;
+            }
+        }
+    }
+}
+
+@function contains-was-validated($context) {
+    @if type-of($context) != list {
+        @debug 'Not a list';
+        @return $context;
+    }
+    @return index($context, '.was-validated');
+}

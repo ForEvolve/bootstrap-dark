@@ -147,7 +147,13 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
-### 1.0.0-alpha.? (latest)
+### 1.0.0-alpha.(latest)
+
+-   Update Bootstrap to 4.5.0
+-   Update dependencies to fix vulnerabilities
+-   Fix form validation #40
+
+### 1.0.0-alpha.1075
 
 -   Remove `p a` `text-decoration: underline;`
     -   This was conflicting with `.btn` in `p`.
