@@ -151,7 +151,7 @@ Since CI build numbers are automated, it is hard to know in advance what the nex
 
 -   Update Bootstrap to 4.5.0
 -   Update dependencies to fix vulnerabilities
--   Fix form validation
+-   Fix form validation #40
 
 ### 1.0.0-alpha.1075
 
