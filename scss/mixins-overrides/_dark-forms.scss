@@ -1,33 +1,5 @@
-// $bs-dark-body-classes: () !default;
-// $bs-dark-body-classes: join($bs-dark-body-classes, '.bootstrap-dark' '.bootstrap');
-$bs-dark-body-classes: '.bootstrap-dark', '.bootstrap';
-
 @mixin form-validation-state-selector($state) {
     @if (contains-was-validated(nth(&, 1))) {
-        // $contextSelector: #{if(&, '&', '')};
-        // @if $contextSelector {
-        //     .typeof-context {
-        //         content: quote($contextSelector);
-        //     }
-        // }
-        // @debug 'Context: ' + $contextSelector;
-        // $context: nth(&, 1);
-        // $selector: '';
-        // @debug '=============';
-        // @debug length($context);
-        // // @debug replace-bs-selector($tmp);
-        // @if length($context) == 2 {
-        //     // @debug 'Length == 2';
-        //     $selector: nth($context, 2);
-        //     //$selector: replace-bs-selector($selector);
-        // } @else if length(&) > 2 {
-        //     // @debug 'Length > 2';
-        //     $selector: nth($context, 1);
-        // } @else {
-        //     // @debug 'Length < 2';
-        //     $selector: '';
-        // }
-        // @debug $selector;
         @if ($state == 'valid' or $state == 'invalid') {
             #{if(&, "&", "")}:#{$state},
             #{if(&, '&', '')}.is-#{$state} {
@@ -39,22 +11,6 @@ $bs-dark-body-classes: '.bootstrap-dark', '.bootstrap';
             }
         }
     }
-}
-
-@function replace-bs-selector($context) {
-    @if type-of($context) != list {
-        @debug 'Not a list';
-        @return $context;
-    }
-
-    $output: ();
-    @each $class in $context {
-        @debug $class;
-        @if not index($bs-dark-body-classes, $class) {
-            $output: append($output, $class);
-        }
-    }
-    @return $output;
 }
 
 @function contains-was-validated($context) {
