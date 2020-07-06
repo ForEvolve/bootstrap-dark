@@ -12,7 +12,6 @@ Bootstrap 4.3.1 dark theme that supports togging dark/light themes as well. Ther
 ![Many controls](assets/images/localhost_7051_.png)
 ![Typography](assets/images/localhost_7051_Typography.png)
 ![Forms](assets/images/localhost_7051_Forms.png)
-![Forms Validated](assets/images/localhost_7051_Forms_validated.png)
 ![Jumbotron](assets/images/localhost_7051_Jumbotron.png)
 ![ListGroup](assets/images/localhost_7051_ListGroup.png)
 ![Tables](assets/images/localhost_7051_Tables.png)

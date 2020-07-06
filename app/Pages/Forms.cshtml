@@ -7,17 +7,15 @@
         <div class="col-3">
             <select class="custom-select">
                 <option value="">Choose an item</option>
-                @for (var i = 0; i < 10; i++){
-                    <option value="1">Item @i</option>
-                }
+                @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                    }
             </select>
         </div>
         <div class="col-3">
             <select class="custom-select disabled" disabled>
                 <option value="">Choose an item</option>
-                @for (var i = 0; i < 10; i++){
-                    <option value="1">Item @i</option>
-                }
+                @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                    }
             </select>
         </div>
     </div>
@@ -28,9 +26,8 @@
             <div class="input-group">
                 <select class="custom-select">
                     <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
+                    @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                        }
                 </select>
                 <input class="form-control valid" type="text">
             </div>
@@ -40,9 +37,8 @@
                 <input class="form-control valid" type="text">
                 <select class="custom-select">
                     <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
+                    @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                        }
                 </select>
             </div>
         </div>
@@ -51,9 +47,8 @@
                 <div class="input-group-prepend">
                     <select class="custom-select">
                         <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
+                        @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                            }
                     </select>
                 </div>
                 <input class="form-control valid" type="text">
@@ -65,9 +60,8 @@
                 <div class="input-group-append">
                     <select class="custom-select">
                         <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
+                        @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                            }
                     </select>
                 </div>
             </div>
@@ -78,9 +72,8 @@
             <div class="input-group">
                 <select class="custom-select disabled" disabled>
                     <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
+                    @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                        }
                 </select>
                 <input class="form-control valid" type="text">
             </div>
@@ -90,9 +83,8 @@
                 <input class="form-control valid" type="text">
                 <select class="custom-select disabled" disabled>
                     <option value="">Choose an item</option>
-                    @for (var i = 0; i < 10; i++){
-                        <option value="1">Item @i</option>
-                    }
+                    @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                        }
                 </select>
             </div>
         </div>
@@ -101,9 +93,8 @@
                 <div class="input-group-prepend">
                     <select class="custom-select disabled" disabled>
                         <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
+                        @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                            }
                     </select>
                 </div>
                 <input class="form-control valid" type="text">
@@ -115,9 +106,8 @@
                 <div class="input-group-append">
                     <select class="custom-select disabled" disabled>
                         <option value="">Choose an item</option>
-                        @for (var i = 0; i < 10; i++){
-                            <option value="1">Item @i</option>
-                        }
+                        @for (var i = 0; i < 10; i++){ <option value="1">Item @i</option>
+                            }
                     </select>
                 </div>
             </div>
@@ -129,70 +119,129 @@
         <small>Issue <a href="https://github.com/ForEvolve/bootstrap-dark/issues/40" target="_blank">#40</a></small>
     </h2>
     <div class="row mt-4">
-        <div class="col-3">
+        <div class="col-2">
             <form method="POST" class="needs-validation" novalidate>
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" name="register_username" placeholder="Enter username" required>
+                    <input type="text" class="form-control" id="username" name="register_username"
+                        placeholder="Enter username" required>
                     <div class="invalid-feedback" id="verify-password-feedback">Your username cannot be empty.</div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Create Account</button>
             </form>
         </div>
-        <div class="col-9">
+        <div class="col-5">
 
             <form method="POST" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                    <label for="validationCustom01">First name</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                        <label for="validationCustom01">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                    <label for="validationCustom02">Last name</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                        <label for="validationCustom02">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                    <label for="validationCustom03">City</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid city.
-                    </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                    <label for="validationCustom04">State</label>
-                    <select class="custom-select" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Please select a valid state.
-                    </div>
+                        <label for="validationCustom03">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
                     </div>
                     <div class="col-md-3 mb-3">
-                    <label for="validationCustom05">Zip</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid zip.
+                        <label for="validationCustom04">State</label>
+                        <select class="custom-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
                     </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                        You must agree before submitting.
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
                     </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+        </div>
+        <div class="col-5">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationServer01">First name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationServer02">Last name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationServer03">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationServer04">State</label>
+                        <select class="custom-select is-invalid" id="validationServer04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationServer05">Zip</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
                     </div>
                 </div>
                 <button class="btn btn-primary" type="submit">Submit form</button>
@@ -201,18 +250,21 @@
     </div>
 </div>
 
+
+
+
 @section scripts{
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
+    (function () {
         'use strict';
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.getElementsByClassName('needs-validation');
             // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function(form) {
+            var validation = Array.prototype.filter.call(forms, function (form) {
                 console.log("Attach form action", form);
-                form.addEventListener('submit', function(event) {
+                form.addEventListener('submit', function (event) {
                     var isValid = form.checkValidity();
                     console.log("Validate form", form, isValid);
                     if (isValid === false) {
