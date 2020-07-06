@@ -9,7 +9,15 @@ Bootstrap 4.3.1 dark theme that supports togging dark/light themes as well. Ther
 
 ## Alpha - preview
 
-![Alpha - preview](assets/images/alpha-3.png)
+![Many controls](assets/images/localhost_7051_.png)
+![Typography](assets/images/localhost_7051_Typography.png)
+![Forms](assets/images/localhost_7051_Forms.png)
+![Forms Validated](assets/images/localhost_7051_Forms_validated.png)
+![Jumbotron](assets/images/localhost_7051_Jumbotron.png)
+![ListGroup](assets/images/localhost_7051_ListGroup.png)
+![Tables](assets/images/localhost_7051_Tables.png)
+![Toasts](assets/images/localhost_7051_Toasts.png)
+![Cards](assets/images/localhost_7051_Cards.png)
 
 _This is a work in progress, if you like it and have some spare time, contributions are welcome._
 
@@ -148,6 +156,11 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
 ### 1.0.0-alpha.(latest)
+
+-   Add table examples
+-   Fix form validation without `.was-validated` #40
+
+### 1.0.0-alpha.1087
 
 -   Update Bootstrap to 4.5.0
 -   Update dependencies to fix vulnerabilities
