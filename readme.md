@@ -1,6 +1,6 @@
 # Bootstrap 4 Dark theme
 
-Bootstrap 4.3.1 dark theme that supports togging dark/light themes as well. There is no fluff, it changes the color of Bootstrap and that's it, no new thing to learn or unlearn, just Bootstrap, but Dark!
+Bootstrap 4 dark theme that supports togging dark/light themes as well. There is no fluff, it changes the color of Bootstrap and that's it, no new thing to learn or unlearn, just Bootstrap, but Dark!
 
 ![VSTS build badge](https://forevolve.visualstudio.com/_apis/public/build/definitions/c685c54e-c04f-4c62-9e82-db39a452f4d9/22/badge)
 [![npm](https://img.shields.io/npm/v/@forevolve/bootstrap-dark)](https://www.npmjs.com/package/@forevolve/bootstrap-dark)
