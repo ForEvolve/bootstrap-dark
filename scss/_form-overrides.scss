@@ -3,7 +3,9 @@
         @include form-validation-state($state, map-get($data, color), map-get($data, icon));
 
         .is-#{$state} ~ .#{$state}-feedback,
-        .is-#{$state} ~ .#{$state}-tooltip {
+        .is-#{$state} ~ .#{$state}-tooltip,
+        :#{$state} ~ .#{$state}-feedback,
+        :#{$state} ~ .#{$state}-tooltip {
             display: block;
         }
     }
