@@ -1,12 +1,15 @@
-@{
+﻿@{
     var title = ViewData["Title"] == null ? "Dark Bootstrap 4 theme" : $"{ViewData["Title"]} - Dark Bootstrap 4 theme";
-    var loadToggleCss = true;
-    var bodyCssClass = "";
-    if (loadToggleCss)
-    {
-        bodyCssClass = "bootstrap-dark";
-    }
-    var navBarCssClass = loadToggleCss ? "navbar-themed" : "navbar-dark bg-dark";
+    var styleSheetType = StyleSheetType.Experimental;
+    var bodyCssClass = styleSheetType switch {
+        StyleSheetType.Toggle => "bootstrap-dark",
+        _ => ""
+    };
+    var navBarCssClass = styleSheetType switch {
+        StyleSheetType.Toggle => "navbar-themed",
+        StyleSheetType.Normal => "navbar-dark bg-dark",
+        _ => "navbar-themed"
+    };
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -18,15 +21,21 @@
 
     <!-- Custom built theme - This already includes Bootstrap 4 -->
     <link rel="stylesheet" href="~/css/site.css">
-    @if(loadToggleCss)
+    @switch (styleSheetType)
     {
-        <link rel="stylesheet" href="~/css/toggle-bootstrap.css">
-        <link rel="stylesheet" href="~/css/toggle-bootstrap-dark.css">
-        <link rel="stylesheet" href="~/css/toggle-bootstrap-print.css">
-    }
-    else
-    {
-        <link rel="stylesheet" href="~/css/bootstrap-dark.css">
+        case StyleSheetType.Normal:
+            <link rel="stylesheet" href="~/css/bootstrap-dark.css">
+            break;
+        case StyleSheetType.Toggle:
+            <link rel="stylesheet" href="~/css/toggle-bootstrap.css">
+            <link rel="stylesheet" href="~/css/toggle-bootstrap-dark.css">
+            <link rel="stylesheet" href="~/css/toggle-bootstrap-print.css">
+            break;
+        case StyleSheetType.Experimental:
+            <link rel="stylesheet" href="~/css/experiments.css">
+            break;
+        default:
+            break;
     }
 </head>
 <body class="@bodyCssClass">
