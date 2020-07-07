@@ -156,6 +156,11 @@ Since CI build numbers are automated, it is hard to know in advance what the nex
 
 ### 1.0.0-alpha.(latest)
 
+-   Fix form validation feedback to address issue #40
+-   Add another form sample
+
+### 1.0.0-alpha.1089
+
 -   Add table examples
 -   Fix form validation without `.was-validated` #40
 
