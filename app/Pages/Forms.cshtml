@@ -119,19 +119,7 @@
         <small>Issue <a href="https://github.com/ForEvolve/bootstrap-dark/issues/40" target="_blank">#40</a></small>
     </h2>
     <div class="row mt-4">
-        <div class="col-2">
-            <form method="POST" class="needs-validation" novalidate>
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" name="register_username"
-                        placeholder="Enter username" required>
-                    <div class="invalid-feedback" id="verify-password-feedback">Your username cannot be empty.</div>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
-            </form>
-        </div>
-        <div class="col-5">
-
+        <div class="col-4">
             <form method="POST" class="needs-validation" novalidate>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
@@ -140,6 +128,9 @@
                         <div class="valid-feedback">
                             Looks good!
                         </div>
+                        <div class="invalid-feedback">
+                            This field is required.
+                        </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="validationCustom02">Last name</label>
@@ -147,12 +138,18 @@
                         <div class="valid-feedback">
                             Looks good!
                         </div>
+                        <div class="invalid-feedback">
+                            This field is required.
+                        </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="validationCustom03">City</label>
                         <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                         <div class="invalid-feedback">
                             Please provide a valid city.
                         </div>
@@ -163,6 +160,9 @@
                             <option selected disabled value="">Choose...</option>
                             <option>...</option>
                         </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                         <div class="invalid-feedback">
                             Please select a valid state.
                         </div>
@@ -170,6 +170,9 @@
                     <div class="col-md-3 mb-3">
                         <label for="validationCustom05">Zip</label>
                         <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                         <div class="invalid-feedback">
                             Please provide a valid zip.
                         </div>
@@ -177,8 +180,69 @@
                 </div>
                 <div class="form-group">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck1" required>
+                        <label class="form-check-label" for="invalidCheck1">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+        </div>
+        <div class="col-4">
+            <form method="POST" class="needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom11">First name</label>
+                        <input type="text" class="form-control" id="validationCustom11" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom12">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom12" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom13">City</label>
+                        <input type="text" class="form-control" id="validationCustom13" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom14">State</label>
+                        <select class="custom-select" id="validationCustom14" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom15">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom15" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
                             Agree to terms and conditions
                         </label>
                         <div class="invalid-feedback">
@@ -189,19 +253,19 @@
                 <button class="btn btn-primary" type="submit">Submit form</button>
             </form>
         </div>
-        <div class="col-5">
+        <div class="col-4">
             <form>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="validationServer01">First name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <label for="validationServer06">First name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer06" value="Mark" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="validationServer02">Last name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <label for="validationServer07">Last name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer07" value="Otto" required>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -209,15 +273,15 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="validationServer03">City</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                        <label for="validationServer08">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer08" required>
                         <div class="invalid-feedback">
                             Please provide a valid city.
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
-                        <label for="validationServer04">State</label>
-                        <select class="custom-select is-invalid" id="validationServer04" required>
+                        <label for="validationServer09">State</label>
+                        <select class="custom-select is-invalid" id="validationServer09" required>
                             <option selected disabled value="">Choose...</option>
                             <option>...</option>
                         </select>
@@ -226,8 +290,8 @@
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
-                        <label for="validationServer05">Zip</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer05" required>
+                        <label for="validationServer10">Zip</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer10" required>
                         <div class="invalid-feedback">
                             Please provide a valid zip.
                         </div>

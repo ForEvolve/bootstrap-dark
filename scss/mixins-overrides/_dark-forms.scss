@@ -1,5 +1,8 @@
 @mixin form-validation-state-selector($state) {
-    @if (contains-was-validated(nth(&, 1))) {
+    $selector: nth(&, 1);
+    $number-of-elements: length($selector);
+    $first-element: nth($selector, 1);
+    @if (contains-was-validated($selector)) {
         @if ($state == 'valid' or $state == 'invalid') {
             #{if(&, "&", "")}:#{$state},
             #{if(&, '&', '')}.is-#{$state} {
@@ -9,6 +12,10 @@
             #{if(&, '&', '')}.is-#{$state} {
                 @content;
             }
+        }
+    } @else if $number-of-elements == 1 and is-bs-selector($first-element) {
+        & .is-#{$state} {
+            @content;
         }
     } @else {
         #{if(&, '&', '')}.is-#{$state} {
@@ -20,7 +27,22 @@
 @function contains-was-validated($context) {
     @if type-of($context) != list {
         @debug 'Not a list';
-        @return $context;
+        @return -1;
     }
     @return index($context, '.was-validated');
+}
+
+@function is-bs-selector($context) {
+    $bs-body-classes: '.bootstrap-dark', '.bootstrap';
+    @if type-of($context) != string {
+        @debug 'Not a string';
+        @return -1;
+    }
+
+    @each $class in $bs-body-classes {
+        @if $context == $class {
+            @return 1;
+        }
+    }
+    @return 0;
 }
