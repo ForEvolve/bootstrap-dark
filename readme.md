@@ -7,6 +7,13 @@ Bootstrap 4 dark theme that supports togging dark/light themes as well. There is
 [![peerDependencies Status](https://img.shields.io/david/peer/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=peer)
 [![devDependency Status](https://img.shields.io/david/dev/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=dev)
 
+## Bootstrap 5
+
+If you are looking for a Bootstrap 5 alternative, I suggest you look at [vinorodrigues/bootstrap-dark-5](https://github.com/vinorodrigues/bootstrap-dark-5).
+@vinorodrigues did a great job already, and whenever I have time to help, I'll do that there.
+I believe that we better focus on building one solid project than maintaining many.
+_As for Boostrap 4, nothing changes about this project._
+
 ## Alpha - preview
 
 ![Many controls](assets/images/localhost_7051_.png)
