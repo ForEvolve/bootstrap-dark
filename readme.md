@@ -7,13 +7,6 @@ Bootstrap 4 dark theme that supports togging dark/light themes as well. There is
 [![peerDependencies Status](https://img.shields.io/david/peer/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=peer)
 [![devDependency Status](https://img.shields.io/david/dev/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=dev)
 
-## Bootstrap 5
-
-If you are looking for a Bootstrap 5 alternative, I suggest you look at [vinorodrigues/bootstrap-dark-5](https://github.com/vinorodrigues/bootstrap-dark-5).
-@vinorodrigues did a great job already, and whenever I have time to help, I'll do that there.
-I believe that we better focus on building one solid project than maintaining many.
-_As for Boostrap 4, nothing changes about this project._
-
 ## Alpha - preview
 
 ![Many controls](assets/images/localhost_7051_.png)
@@ -54,6 +47,16 @@ To load the dark theme, `<link>` the `bootstrap-dark.css` or the `bootstrap-dark
 
 ```html
 <link rel="stylesheet" href="/css/bootstrap-dark.min.css" />
+```
+
+### CDN
+
+You can also load the files using [jsdelivr](jsdelivr.net) by following this pattern: `https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@{NPM PACKAGE VERSION}/dist/{PATH TO THE FILE}`.
+
+Here is the preceding example using jsdelivr:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0-alpha.1091/dist/css/bootstrap-dark.min.css" />
 ```
 
 ### Dark/Light toggle
@@ -258,3 +261,10 @@ The following project applies `bootstrap-dark` to the bootstrap documentation si
 ## Special thanks
 
 I started this project based on the [Bootstrap Theme Kit](https://hackerthemes.com/kit/) by [Alexander Rechsteiner](https://github.com/arechsteiner) at [Hacker Themes](https://hackerthemes.com). This allows me to publish a lighter version of the theme; making it easier to be used (compared to the full Bootstrap Jekyll docs).
+
+# Bootstrap 5
+
+If you are looking for a Bootstrap 5 alternative, I suggest you look at [vinorodrigues/bootstrap-dark-5](https://github.com/vinorodrigues/bootstrap-dark-5).
+@vinorodrigues did a great job already, and whenever I have time to help, I'll do that there.
+I believe that we better focus on building one solid project than maintaining many.
+_As for Boostrap 4, nothing changes about this project._
