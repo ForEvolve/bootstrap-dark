@@ -83,9 +83,7 @@ When using the `toggle-*` stylesheets, you can create `.navbar` that uses the cu
 Example, instead of `navbar-light bg-light` or `navbar-dark bg-dark`, use `.navbar-themed`, like this:
 
 ```html
-<nav class="navbar navbar-expand-lg navbar-themed">
-    ...
-</nav>
+<nav class="navbar navbar-expand-lg navbar-themed">...</nav>
 ```
 
 ### CI builds
@@ -105,12 +103,12 @@ If you want to build the theme manually, modify it or even contribute, this sect
 
 1. Clone this repo
 1. Run `npm install`
-1. Go to the _app_ directory (`cd app`)
+1. Go to the _samples/razor-pages_ directory (`cd samples/razor-pages`)
 1. Run `dotnet restore`
 
 ### Starting the project
 
-1. Run `dotnet run` (from the _app_ directory) or if you are using VS Code, `Start Debugging` will work.
+1. Run `dotnet run` (from the _samples/razor-pages_ directory) or if you are using VS Code, `Start Debugging` will work.
 1. Run `npm run watch`
 
 Once you started both server and the watch command, the `browser-sync` proxy should open in a browser at the following URI: `http://localhost:3002`.
@@ -135,8 +133,8 @@ There is a few npm and gulp scripts.
 
 ## The project structure
 
--   `app` is the Asp.Net Core application that is used to test the theme. This directory is not packaged.
-    -   `Pages` are the Asp.Net Core Razor Pages. That's the preview.
+-   `samples/razor-pages` is the ASP.NET Core application that is used to test the theme. This directory is not packaged.
+    -   `Pages` are the ASP.NET Core Razor Pages. That's the preview.
         > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages! Moreover, it is open source and cross-platform.
         >
         > If you think that something else would be better, feel free to open an issue about it; I would not mind switching to another technology (see the Contribute section below).

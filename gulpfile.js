@@ -27,7 +27,7 @@ gulp.task('copy-bootstrap-js', function () {
 gulp.task('copy-dist-to-wwwroot', function () {
     return gulp
         .src(['dist/**/*'])
-        .pipe(gulp.dest('app/wwwroot/'));
+        .pipe(gulp.dest('samples/razor-pages/wwwroot/'));
 });
 
 gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')), function () {

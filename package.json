@@ -8,7 +8,7 @@
     "test": "echo \"Info: no test specified\" && exit 0",
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
-    "browser-sync-proxy": "browser-sync start --proxy \"http://localhost:7051/\" --files \"app/wwwroot/css/*.css\"",
+    "browser-sync-proxy": "browser-sync start --proxy \"http://localhost:7051/\" --files \"samples/razor-pages/wwwroot/css/*.css\"",
     "watch": "npm-run-all --parallel gulp-watch browser-sync-proxy"
   },
   "repository": {
