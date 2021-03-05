@@ -15,9 +15,6 @@
     "type": "git",
     "url": "https://github.com/ForEvolve/bootstrap-dark.git"
   },
-  "publishConfig": {
-    "registry": "https://www.myget.org/F/forevolve/npm/"
-  },
   "keywords": [
     "bootstrap",
     "themes",
