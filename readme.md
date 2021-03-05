@@ -53,7 +53,7 @@ Here is the preceding example using jsdelivr:
 
 ## Dark/Light toggle
 
-You can now `<link>` both the `toggle-bootstrap.css` and the `toggle-bootstrap-dark.css` files to allow toggling the normal/dark theme based on your page body.
+You can `<link>` both the `toggle-bootstrap.css` and the `toggle-bootstrap-dark.css` files to allow toggling the normal/dark theme based on your page body.
 
 -   To display the original Bootstrap color, apply the `bootstrap` class on your body, like `<body class="bootstrap">`.
 -   To display the Bootstrap Dark theme, apply the `bootstrap-dark` class on your body, like `<body class="bootstrap-dark">`.
@@ -67,6 +67,16 @@ If you want to support print, load the `toggle-bootstrap-print.css` or `toggle-b
 <link rel="stylesheet" href="/css/toggle-bootstrap-dark.min.css" />
 <link rel="stylesheet" href="/css/toggle-bootstrap-print.min.css" />
 ```
+
+**Using jsdelivr CDN:**
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-dark.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-print.min.css" />
+```
+
+Check out the samples app for more info about this feature.
 
 ## Themeable .navbar
 
@@ -100,7 +110,7 @@ If you want to build the theme manually, modify it or even contribute, this sect
 ## Starting the project
 
 1. Run `dotnet run` (from the _samples/razor-pages_ directory) or if you are using VS Code, `Start Debugging` will work.
-1. Run `npm run watch`
+1. Run `npm run watch` in a second terminal
 
 Once you started both server and the watch command, the `browser-sync` proxy should open in a browser at the following URI: `http://localhost:3000`.
 
@@ -117,13 +127,17 @@ There is a few npm and gulp scripts.
 ### gulp scripts
 
 1. `build-theme` compile the theme to css.
-1. `copy-dist-to-wwwroot` copy the `dist` folder content to `wwwroot` (used by web pages).
+1. `copy-dist-to-razor-pages` copy the content of the `dist` folder to `samples/razor-pages/wwwroot` (used by the Razor Pages).
+1. `copy-dist-to-html` copy the content of the `dist` folder to `samples/html` (used by the HTML sample).
+1. `copy-dist-to-samples` executes `copy-dist-to-html` and `copy-dist-to-razor-pages` in parallel.
 1. `copy-bootstrap-js` copy the bootstrap js files to the `dist/js` directory.
 1. `watch` execute `copy-bootstrap-js` then watch to rebuild the theme.
-1. `default` simply runs both `build-theme` and `copy-bootstrap-js`.
+1. `default` runs `copy-bootstrap-js` and `build-theme` then `copy-dist-to-samples`.
 
 # The project structure
 
+-   `samples` is the samples folders.
+-   `samples/html` is a plain HTML samples app.
 -   `samples/razor-pages` is the ASP.NET Core application that is used to test the theme. This directory is not packaged.
     -   `Pages` are the ASP.NET Core Razor Pages. That's the preview.
         > **Why .NET Core?** Well, I wanted to script some loops, and I know .Net; so I picked Razor Pages to do just that: dynamic pages! Moreover, it is open source and cross-platform.
@@ -156,10 +170,11 @@ Since CI build numbers are automated, it is hard to know in advance what the nex
 ## 1.0.0
 
 -   Update to Bootstrap 4.6.0
--   Move the Razor Pages app to the `samples` directory
--   Add a new plain HTML sample app
--   Move the build from Azure DevOps to GitHub Actions
--   Versioning migrated to use [Nerdbank.GitVersioning](https://github.com/dotnet/Nerdbank.GitVersioning)
+-   Move the Razor Pages app to the `samples/razor-pages` directory
+-   Add a new plain HTML app in the `samples/html` directory
+-   Move the CI/CD pipeline from Azure DevOps to GitHub Actions
+-   Migrate versioning from manual PowerShell scripts to use [Nerdbank.GitVersioning](https://github.com/dotnet/Nerdbank.GitVersioning)
+-   Update README
 
 ## 1.0.0-alpha.1091
 
