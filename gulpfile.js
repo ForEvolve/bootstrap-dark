@@ -24,14 +24,24 @@ gulp.task('copy-bootstrap-js', function () {
         .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('copy-dist-to-wwwroot', function () {
+gulp.task('copy-dist-to-razor-pages', function () {
     return gulp
         .src(['dist/**/*'])
         .pipe(gulp.dest('samples/razor-pages/wwwroot/'));
 });
+gulp.task('copy-dist-to-html', function () {
+    return gulp
+        .src(['dist/**/*'])
+        .pipe(gulp.dest('samples/html/'));
+});
+gulp.task('copy-dist-to-samples', gulp.parallel(
+    'copy-dist-to-razor-pages', 
+    'copy-dist-to-html'
+));
 
-gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')), function () {
-    gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-wwwroot'));
+
+gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')), function () {
+    gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-samples'));
 }));
 
-gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-wwwroot')));
+gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')));
