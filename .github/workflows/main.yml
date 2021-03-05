@@ -2,7 +2,7 @@ name: Build and deploy
 
 on:
     push:
-        branches: [main, master, move-ci-cd-to-github-actions]
+        branches: [main, master]
         paths:
             - 'scss/**'
 
@@ -60,15 +60,15 @@ jobs:
                   echo 'NpmPackageVersion: ${{ steps.nbgv.outputs.NpmPackageVersion }}'
 
             - run: npm install
-              # if: github.event_name == 'push'
+              if: github.event_name == 'push'
 
             - run: npm run build
-              # if: github.event_name == 'push'
+              if: github.event_name == 'push'
 
             - run: npm publish --access=public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              # if: github.event_name == 'push'
+              if: github.event_name == 'push'
 
             - uses: actions/create-release@v1
               env:
@@ -78,4 +78,4 @@ jobs:
                   release_name: v${{ steps.nbgv.outputs.NpmPackageVersion }} Release
                   draft: false
                   prerelease: false
-              # if: github.event_name == 'push'
+              if: github.event_name == 'push'
