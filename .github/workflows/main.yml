@@ -2,7 +2,7 @@ name: Build and deploy
 
 on:
     push:
-        branches: [main, master]
+        branches: [main, master, move-ci-cd-to-github-actions]
         paths:
             - 'scss/**'
 
