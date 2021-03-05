@@ -1,20 +1,19 @@
 {
   "name": "@forevolve/bootstrap-dark",
   "description": "A Bootstrap 4 Dark theme.",
-  "version": "1.0.0-alpha.0",
+  "version": "0.0.0",
   "prettier": "@forevolve/prettier-config",
   "scripts": {
+    "build": "gulp",
+    "test": "echo \"Info: no test specified\" && exit 0",
     "gulp-watch": "gulp watch",
     "browser-sync": "browser-sync start --server --files \"dist/css/*.css\"",
-    "browser-sync-proxy": "browser-sync start --proxy \"http://localhost:7051/\" --files \"app/wwwroot/css/*.css\"",
+    "browser-sync-proxy": "browser-sync start --proxy \"http://localhost:7051/\" --files \"samples/razor-pages/wwwroot/css/*.css\"",
     "watch": "npm-run-all --parallel gulp-watch browser-sync-proxy"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ForEvolve/bootstrap-dark.git"
-  },
-  "publishConfig": {
-    "registry": "https://www.myget.org/F/forevolve/npm/"
   },
   "keywords": [
     "bootstrap",
@@ -31,7 +30,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   },

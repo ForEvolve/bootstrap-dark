@@ -5,7 +5,7 @@
             "label": "build",
             "command": "dotnet",
             "type": "process",
-            "args": ["build", "${workspaceFolder}/app/bootstrap-dark.csproj"],
+            "args": ["build", "${workspaceFolder}/samples/razor-pages/bootstrap-dark.csproj"],
             "problemMatcher": "$msCompile"
         }
     ]

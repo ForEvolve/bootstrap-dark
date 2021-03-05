@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/app/bin/Debug/netcoreapp2.2/bootstrap-dark.dll",
+            "program": "${workspaceFolder}/samples/razor-pages/bin/Debug/netcoreapp2.2/bootstrap-dark.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/app",
+            "cwd": "${workspaceFolder}/samples/razor-pages",
             "stopAtEntry": false,
             "internalConsoleOptions": "openOnSessionStart",
             "launchBrowser": {
@@ -33,7 +33,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceFolder}/app/Views"
+                "/Views": "${workspaceFolder}/samples/razor-pages/Views"
             }
         },
         {
