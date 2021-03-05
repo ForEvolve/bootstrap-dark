@@ -18,8 +18,6 @@ Bootstrap 4 dark theme that supports togging dark/light themes as well. There is
 ![Toasts](assets/images/localhost_7051_Toasts.png)
 ![Cards](assets/images/localhost_7051_Cards.png)
 
-_This is a work in progress, if you like it and have some spare time, contributions are welcome._
-
 # Versioning
 
 SemVer is used to keep things easy for everyone.
