@@ -68,10 +68,7 @@ body.bootstrap-dark {
     @import 'node_modules/bootstrap/scss/spinners';
     @import 'node_modules/bootstrap/scss/utilities';
 
-    .navbar-themed {
-        @extend .bg-dark;
-        @extend .navbar-dark;
-    }
+    @import 'navbar-themed-dark';
 
     @import 'dark-styles';
 }
