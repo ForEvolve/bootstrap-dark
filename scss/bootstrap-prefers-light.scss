@@ -1,21 +1,9 @@
-@import 'node_modules/bootstrap/scss/functions';
-@import 'node_modules/bootstrap/scss/variables';
+@media (prefers-color-scheme: light) {
+    @import 'node_modules/bootstrap/scss/functions';
+    @import 'node_modules/bootstrap/scss/variables';
 
-@import 'node_modules/bootstrap/scss/mixins';
-@import 'mixins-overrides';
+    @import 'node_modules/bootstrap/scss/mixins';
 
-body.bootstrap {
-    margin: 0; // 1
-    font-family: $font-family-base;
-    @include font-size($font-size-base);
-    font-weight: $font-weight-base;
-    line-height: $line-height-base;
-    color: $body-color;
-    text-align: left; // 3
-    background-color: $body-bg; // 2
-}
-
-.bootstrap {
     @import 'node_modules/bootstrap/scss/root';
     @import 'node_modules/bootstrap/scss/reboot';
     @import 'node_modules/bootstrap/scss/type';
@@ -25,7 +13,6 @@ body.bootstrap {
     @import 'node_modules/bootstrap/scss/tables';
 
     @import 'node_modules/bootstrap/scss/forms';
-    @import 'form-overrides';
 
     @import 'node_modules/bootstrap/scss/buttons';
     @import 'node_modules/bootstrap/scss/transitions';

@@ -88,6 +88,39 @@ Example, instead of `navbar-light bg-light` or `navbar-dark bg-dark`, use `.navb
 
 Check out the samples app for more info about this feature.
 
+## prefers-color-scheme
+
+From version 1.1, I added two new css files: `bootstrap-prefers-dark.css` and `bootstrap-prefers-light.css`.
+Those two files use `prefers-color-scheme` media query instead of relying on a body's css class.
+There is also a new `bootstrap-light.css` file that is bootstrap, plus the `.navbar-themed` light addon.
+
+There is two possible combination:
+
+-   default (no `prefers-color-scheme` specified or `prefers-color-scheme: light`): default bootstrap (light), `prefers-color-scheme: dark`: bootstrap dark
+-   default (no `prefers-color-scheme` specified or `prefers-color-scheme: dark`): bootstrap dark, `prefers-color-scheme: light`: default bootstrap (light)
+
+Here is an example for a **light default**:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.1.0/dist/css/bootstrap-light.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.1.0/dist/css/bootstrap-prefers-dark.min.css" />
+```
+
+See `./samples/html/prefers-dark-default-light.html` for a working example.
+
+> Note that the _print css_ is included in `bootstrap-light.min.css`.
+
+Here is an example for a **dark default**:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.1.0/dist/css/bootstrap-dark.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.1.0/dist/css/bootstrap-prefers-light.min.css" />
+```
+
+See `./samples/html/prefers-light-default-dark.html` for a working example.
+
+> Note that the _print css_ is included in `bootstrap-dark.min.css`.
+
 # How to build
 
 If you want to build the theme manually, modify it or even contribute, this section explains how.
@@ -164,6 +197,15 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 # Release notes
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
+
+## 1.1.0
+
+-   Update `bootstrap-dark.css` to include the `.navbar-themed` class (dark version).
+-   Add `bootstrap-light.css` which is bootstrap plus the `.navbar-themed` class (light version).
+-   Add `bootstrap-prefers-dark.[css|scss]` that is the equivalent of `bootstrap-dark.[css|scss]`, without the print, wrapped in a `@media (prefers-color-scheme: dark)` media query.
+-   Add `bootstrap-prefers-light.[css|scss]` that is the equivalent of `bootstrap-light.[css|scss]`, without the print, wrapped in a `@media (prefers-color-scheme: light)` media query.
+-   Add two samples to show this usage: `./samples/html/prefers-dark-default-light.html` and `./samples/html/prefers-light-default-dark.html`
+-   Update .NET/Razor Pages sample to use these new CSS files.
 
 ## 1.0.0
 
