@@ -35,7 +35,7 @@ gulp.task('copy-dist-to-html', function () {
         .pipe(gulp.dest('samples/html/'));
 });
 gulp.task('copy-dist-to-samples', gulp.parallel(
-    'copy-dist-to-razor-pages', 
+    'copy-dist-to-razor-pages',
     'copy-dist-to-html'
 ));
 
@@ -45,3 +45,12 @@ gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('b
 }));
 
 gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')));
+
+gulp.task('testcleancss', () => {
+    const cleanCSS = require('gulp-clean-css');
+    return gulp.src('testcleancss.css')
+        .pipe(cleanCSS({
+            format: 'beautify'
+        }))
+        .pipe(gulp.dest('xtestcleancss'));
+});

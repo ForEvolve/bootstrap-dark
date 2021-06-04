@@ -1,0 +1,11 @@
+.panel {
+    padding: 10px;
+    background-color: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+    .panel {
+        padding: 10px;
+        background-color: red;
+    }
+}
