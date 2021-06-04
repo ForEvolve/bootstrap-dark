@@ -1,5 +1,3 @@
-var cleanNonColorAttr = require("./clean_non_color_attr.js");
-
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -51,8 +49,10 @@ gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme
 
 
 
-gulp.task('testcleannoncolor', function () {
-    return gulp.src('*.css')
+gulp.task('clean-prefers-stylesheets', function () {
+    const cleanNonColorAttr = require("./clean_non_color_attr.js");
+    return gulp.src(['dist/css/bootstrap-prefers-dark.css','dist/css/bootstrap-prefers-light.css'])
         .pipe(cleanNonColorAttr({ compress: false }))
+        .pipe(cleanCss({format: "beautify"}))
         .pipe(gulp.dest('xtestcleannoncolor'));
 });

@@ -28,7 +28,6 @@ module.exports = function (options) {
     // PARSING
     function removeCssAttributes(parsedCss) {
         parsedCss.stylesheet.rules = mapRules(parsedCss.stylesheet.rules);
-        console.log(parsedCss.stylesheet.rules);
         return parsedCss;
     }
 
