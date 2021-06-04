@@ -71,8 +71,8 @@ gulp.task('copy-dist-to-samples', gulp.parallel(
 ));
 
 
-gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')), function () {
+gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'build-combined-theme', 'copy-dist-to-samples')), function () {
     gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-samples'));
 }));
 
-gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')));
+gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'build-combined-theme', 'copy-dist-to-samples')));
