@@ -35,10 +35,20 @@ gulp.task('copy-dist-to-html', function () {
         .pipe(gulp.dest('samples/html/'));
 });
 gulp.task('copy-dist-to-samples', gulp.parallel(
-    'copy-dist-to-razor-pages', 
+    'copy-dist-to-razor-pages',
     'copy-dist-to-html'
 ));
 
+gulp.task('testpostcss', () => {
+    const postcss = require('gulp-postcss')
+    return gulp.src('test-postcss.css')
+        .pipe(postcss([
+            require('postcss-merge-rules'), 
+            require('postcss-discard-duplicates'), 
+            require('postcss-discard-unused')
+        ]))
+        .pipe(gulp.dest('test-postcss-target'))
+});
 
 gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')), function () {
     gulp.watch(['scss/*.scss'], gulp.series('build-theme', 'copy-dist-to-samples'));

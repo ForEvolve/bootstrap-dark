@@ -32,7 +32,10 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "postcss-discard-duplicates": "^5.0.1",
+    "postcss-discard-unused": "^5.0.1",
+    "postcss-merge-rules": "^5.0.2"
   },
   "files": [
     "scss/**/*.scss",
@@ -41,12 +44,12 @@
   ],
   "devDependencies": {
     "@forevolve/prettier-config": "^2.0.1",
-    "autoprefixer": "^9.7.5",
+    "autoprefixer": "^10.2.6",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.2.0",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^9.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-scss-lint": "^1.0.0",
