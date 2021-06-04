@@ -1,3 +1,5 @@
+var cleanNonColorAttr = require("./clean_non_color_attr.js");
+
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -35,7 +37,7 @@ gulp.task('copy-dist-to-html', function () {
         .pipe(gulp.dest('samples/html/'));
 });
 gulp.task('copy-dist-to-samples', gulp.parallel(
-    'copy-dist-to-razor-pages', 
+    'copy-dist-to-razor-pages',
     'copy-dist-to-html'
 ));
 
@@ -45,3 +47,12 @@ gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('b
 }));
 
 gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')));
+
+
+
+
+gulp.task('testcleannoncolor', function () {
+    return gulp.src('*.css')
+        .pipe(cleanNonColorAttr({ compress: false }))
+        .pipe(gulp.dest('xtestcleannoncolor'));
+});
