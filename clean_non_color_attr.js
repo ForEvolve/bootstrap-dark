@@ -1,15 +1,23 @@
+//
+// Based on https://github.com/dinhani/gulp-css-remove-attributes/blob/master/index.js
+//
 const through = require('through2');
-// const PluginError = require('gulp-util').PluginError;
-// const util = require('util');
 const css = require('css');
 
 const PLUGIN_NAME = 'gulp-css-clean-non-color-attributes';
 module.exports = function (options) {
-    const attributesNotToRemove = ['color', 'background-color', 'background', 'border', 'border-color'];
+    const attributesNotToRemove = [
+        'color',
+        'background',
+        'background-color',
+        'background-image',
+        'border',
+        'border-color',
+        'box-shadow',
+        'outline-color',
+        'text-shadow',
+    ];
 
-    // =========================================================================
-    // FUNCTIONS
-    // =========================================================================
     // INPUT
     function parseInputCss(inputFile, encoding, options) {
         let fileContent = inputFile.contents.toString(encoding);
