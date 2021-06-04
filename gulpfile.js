@@ -45,3 +45,11 @@ gulp.task('watch', gulp.series(gulp.parallel('copy-bootstrap-js', gulp.series('b
 }));
 
 gulp.task('default', gulp.parallel('copy-bootstrap-js', gulp.series('build-theme', 'copy-dist-to-samples')));
+
+
+gulp.task('testremoveattr', function () {
+    const removeAttributes = require('gulp-css-remove-attributes')
+    return gulp.src('*.css')
+        .pipe(removeAttributes(['padding'], {compress: false}))
+        .pipe(gulp.dest('xtestremoveattr'));
+});
