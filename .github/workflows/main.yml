@@ -44,7 +44,6 @@ jobs:
             - uses: actions/checkout@v2
               with:
                   fetch-depth: 0
-
             - uses: actions/setup-node@v2
               with:
                   node-version: 14
@@ -56,20 +55,14 @@ jobs:
                   stamp: package.json
                   setCommonVars: true
                   setAllVars: true
-
             - run: |
                   echo 'NpmPackageVersion: ${{ steps.nbgv.outputs.NpmPackageVersion }}'
 
             - run: npm install
-              if: github.event_name == 'push'
-
             - run: npm run build
-              if: github.event_name == 'push'
-
             - run: npm publish --access=public
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              if: github.event_name == 'push'
 
             - uses: actions/create-release@v1
               env:
@@ -78,5 +71,4 @@ jobs:
                   tag_name: v${{ steps.nbgv.outputs.NpmPackageVersion }}
                   release_name: v${{ steps.nbgv.outputs.NpmPackageVersion }} Release
                   draft: false
-                  prerelease: false
-              if: github.event_name == 'push'
+                  prerelease: ${{ github.event_name != 'push' }}
