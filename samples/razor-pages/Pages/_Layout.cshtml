@@ -9,6 +9,7 @@
     var navBarCssClass = loadToggleCss ? "navbar-themed" : "navbar-dark bg-dark";
 
     // This overrides the previous settings
+    var useCombined = true;
     var usePrefered = true;
     var defaultTheme = Context.Request.Query.ContainsKey("default-theme")
     ? Context.Request.Query["default-theme"].FirstOrDefault() ?? "dark"
@@ -19,7 +20,6 @@
         bodyCssClass = "";
         navBarCssClass = "navbar-themed";
     }
-
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -35,13 +35,27 @@
     {
         if (defaultTheme == "dark")
         {
-            <link rel="stylesheet" href="~/css/bootstrap-dark.css">
-            <link rel="stylesheet" href="~/css/bootstrap-prefers-light.css">
+            if (useCombined)
+            {
+                <link rel="stylesheet" href="~/css/bootstrap-dark-prefers-light.css">
+            }
+            else
+            {
+                <link rel="stylesheet" href="~/css/bootstrap-dark.css">
+                <link rel="stylesheet" href="~/css/bootstrap-prefers-light.css">
+            }
         }
         else
         {
-            <link rel="stylesheet" href="~/css/bootstrap-light.css">
-            <link rel="stylesheet" href="~/css/bootstrap-prefers-dark.css">
+            if (useCombined)
+            {
+                <link rel="stylesheet" href="~/css/bootstrap-light-prefers-dark.css">
+            }
+            else
+            {
+                <link rel="stylesheet" href="~/css/bootstrap-light.css">
+                <link rel="stylesheet" href="~/css/bootstrap-prefers-dark.css">
+            }
         }
     }
     else if (loadToggleCss)
@@ -68,46 +82,60 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-md-0">
                 <li class="nav-item active">
-                    <a class="nav-link" asp-page="index">Home
+                    <a class="nav-link" asp-page="index" asp-route-default-theme="@defaultTheme">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="typography">Typography</a>
+                    <a class="nav-link" asp-page="typography" asp-route-default-theme="@defaultTheme">Typography</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="tables">Tables</a>
+                    <a class="nav-link" asp-page="tables" asp-route-default-theme="@defaultTheme">Tables</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="cards">Cards</a>
+                    <a class="nav-link" asp-page="cards" asp-route-default-theme="@defaultTheme">Cards</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="listgroup">List Group</a>
+                    <a class="nav-link" asp-page="listgroup" asp-route-default-theme="@defaultTheme">List Group</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="jumbotron">Jumbotron</a>
+                    <a class="nav-link" asp-page="jumbotron" asp-route-default-theme="@defaultTheme">Jumbotron</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="forms">Forms</a>
+                    <a class="nav-link" asp-page="forms" asp-route-default-theme="@defaultTheme">Forms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="toasts">Toasts</a>
+                    <a class="nav-link" asp-page="toasts" asp-route-default-theme="@defaultTheme">Toasts</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#!">Disabled</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-page="footer">Footer</a>
+                    <a class="nav-link" asp-page="footer" asp-route-default-theme="@defaultTheme">Footer</a>
                 </li>
             </ul>
+            @{
+                var darkLinkText = "Dark";
+                var darkLinkHref ="javascript:document.getElementsByTagName('body')[0].setAttribute('class', 'bootstrap-dark');";
+
+                var lightLinkText = "Light";
+                var lightLinkHref = "javascript:document.getElementsByTagName('body')[0].setAttribute('class', 'bootstrap');";
+                if (usePrefered)
+                {
+                    darkLinkText = "Default: dark (prefers: light)";
+                    lightLinkText = "Default: light (prefers: dark)";
+                    darkLinkHref = "?default-theme=dark";
+                    lightLinkHref = "?default-theme=light";
+                }
+            }
             <ul class="navbar-nav mt-2 mt-md-0 my-2">
                 <li class="nav-item mx-2">
                     <a class="nav-link"
-                        href="javascript:document.getElementsByTagName('body')[0].setAttribute('class', 'bootstrap-dark');">Dark</a>
+                        href="@darkLinkHref">@darkLinkText</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link"
-                        href="javascript:document.getElementsByTagName('body')[0].setAttribute('class', 'bootstrap');">Light</a>
+                        href="@lightLinkHref">@lightLinkText</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
