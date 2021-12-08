@@ -123,8 +123,9 @@ See `./samples/html/prefers-light-default-dark.html` for a working example.
 
 ## bootstrap-${default}-prefers-${specific}.css
 
-Those two stylesheets leverage the `prefers-color-scheme` CSS media query.
-They are a combination of two CSS.
+Added in version 1.2 (preview) and 2.0, the stylesheets `bootstrap-dark-prefers-light.css` and `bootstrap-light-prefers-dark.css` leverage the `prefers-color-scheme` CSS media query and allow a default color scheme followed by a preferred color scheme.
+
+Technically, they are a combination of two CSS.
 Their high-level structure looks like the following:
 
 ```css
@@ -140,13 +141,21 @@ bootstrap-light.css or bootstrap-dark.css
 }
 ```
 
-Use by loading only that CSS (ex.: default: light with dark support):
+You can use these by loading one of them like this (ex.: default: light with dark support):
 
 ```html
 <link rel="stylesheet" href="/dist/css/bootstrap-light-prefers-dark.min.css" />
 ```
 
 > You can also use jsdelivr CDN.
+
+```html
+<!-- Bootstrap Dark by default with `prefers: light` support -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@2.0.0/dist/css/bootstrap-dark-prefers-light.min.css" />
+<!-- OR -->
+<!-- Bootstrap (Light) by default with `prefers: dark` support -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@2.0.0/dist/css/bootstrap-light-prefers-dark.min.css" />
+```
 
 # How to build
 
@@ -225,9 +234,7 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
-## 1.2.x (preview)
-
-_This version is not completed and could contain bugs._
+## 2.0.0
 
 -   Add `bootstrap-dark-prefers-light.css` which default to Bootstrap dark and display the light colors if the user's `prefers-color-scheme: light`.
 -   Add `bootstrap-light-prefers-dark.css` which default to Bootstrap and display the dark colors if the user's `prefers-color-scheme: dark`.
@@ -236,16 +243,11 @@ _This version is not completed and could contain bugs._
 -   Add `clean_non_color_attr.js` gulp plugin (based on `gulp-css-remove-attributes`).
 -   Update .NET/Razor Pages sample to use these new CSS files.
 
-### Completed state
+> The preview versions 1.2.x was ¾ of this. We bumped the version due to the `$card-color` change (see below).
 
--   [x] default: light - prefers: light
--   [x] default: light - prefers: dark
--   [ ] default: dark - prefers: light
--   [x] default: dark - prefers: dark
+### Breaking changes
 
-### Known issues
-
--   Color bugs in the dark/light theme are caused by color variables being set to `null` in Bootstrap and overridden in Bootstrap-dark.
+The `$card-color` variable has been reverted from `$gray-200` (`#e9ecef`) to `null` (default Bootstrap value) due to a color issue in the dark/light theme.
 
 ## 1.1.0
 
