@@ -12840,10 +12840,6 @@ a.text-dark:hover {
     border-top: 0;
   }
 
-  .card-body {
-    color: #e9ecef;
-  }
-
   .card-header {
     background-color: rgba(255,255,255,.03);
     border-bottom: 1px solid rgba(255,255,255,.125);
