@@ -5663,31 +5663,37 @@ a.badge-dark:focus {
   color: #491217;
 }
 
-.alert-light {
+.alert-light,
+.alert-themed {
   color: #818182;
   background-color: #fefefe;
   border-color: #fdfdfe;
 }
 
-.alert-light hr {
+.alert-light hr,
+.alert-themed hr {
   border-top-color: #ececf6;
 }
 
-.alert-light .alert-link {
+.alert-light .alert-link,
+.alert-themed .alert-link {
   color: #686868;
 }
 
-.alert-dark {
+.alert-dark,
+.alert-themed-inverted {
   color: #1b1e21;
   background-color: #d6d8d9;
   border-color: #c6c8ca;
 }
 
-.alert-dark hr {
+.alert-dark hr,
+.alert-themed-inverted hr {
   border-top-color: #b9bbbe;
 }
 
-.alert-dark .alert-link {
+.alert-dark .alert-link,
+.alert-themed-inverted .alert-link {
   color: #040505;
 }
 
@@ -7082,29 +7088,39 @@ button.bg-danger:hover {
 }
 
 .bg-light,
+.bg-themed,
 .navbar-themed {
   background-color: #f8f9fa!important;
 }
 
 a.bg-light:focus,
 a.bg-light:hover,
+a.bg-themed:focus,
+a.bg-themed:hover,
 a.navbar-themed:focus,
 a.navbar-themed:hover,
 button.bg-light:focus,
 button.bg-light:hover,
+button.bg-themed:focus,
+button.bg-themed:hover,
 button.navbar-themed:focus,
 button.navbar-themed:hover {
   background-color: #dae0e5!important;
 }
 
-.bg-dark {
+.bg-dark,
+.bg-themed-inverted {
   background-color: #343a40!important;
 }
 
 a.bg-dark:focus,
 a.bg-dark:hover,
+a.bg-themed-inverted:focus,
+a.bg-themed-inverted:hover,
 button.bg-dark:focus,
-button.bg-dark:hover {
+button.bg-dark:hover,
+button.bg-themed-inverted:focus,
+button.bg-themed-inverted:hover {
   background-color: #1d2124!important;
 }
 
@@ -10808,21 +10824,27 @@ a.text-danger:hover {
   color: #a71d2a!important;
 }
 
-.text-light {
+.text-light,
+.text-themed-inverted {
   color: #f8f9fa!important;
 }
 
 a.text-light:focus,
-a.text-light:hover {
+a.text-light:hover,
+a.text-themed-inverted:focus,
+a.text-themed-inverted:hover {
   color: #cbd3da!important;
 }
 
-.text-dark {
+.text-dark,
+.text-themed {
   color: #343a40!important;
 }
 
 a.text-dark:focus,
-a.text-dark:hover {
+a.text-dark:hover,
+a.text-themed:focus,
+a.text-themed:hover {
   color: #121416!important;
 }
 
@@ -13114,23 +13136,27 @@ a.text-dark:hover {
     color: #491217;
   }
 
-  .alert-light {
+  .alert-light,
+  .alert-themed-inverted {
     color: #818182;
     background-color: #fefefe;
     border-color: #fdfdfe;
   }
 
-  .alert-light .alert-link {
+  .alert-light .alert-link,
+  .alert-themed-inverted .alert-link {
     color: #686868;
   }
 
-  .alert-dark {
+  .alert-dark,
+  .alert-themed {
     color: #1b1e21;
     background-color: #d6d8d9;
     border-color: #c6c8ca;
   }
 
-  .alert-dark .alert-link {
+  .alert-dark .alert-link,
+  .alert-themed .alert-link {
     color: #040505;
   }
 
@@ -13577,28 +13603,38 @@ a.text-dark:hover {
     background-color: #bd2130!important;
   }
 
-  .bg-light {
+  .bg-light,
+  .bg-themed-inverted {
     background-color: #f8f9fa!important;
   }
 
   a.bg-light:focus,
   a.bg-light:hover,
+  a.bg-themed-inverted:focus,
+  a.bg-themed-inverted:hover,
   button.bg-light:focus,
-  button.bg-light:hover {
+  button.bg-light:hover,
+  button.bg-themed-inverted:focus,
+  button.bg-themed-inverted:hover {
     background-color: #dae0e5!important;
   }
 
   .bg-dark,
+  .bg-themed,
   .navbar-themed {
     background-color: #343a40!important;
   }
 
   a.bg-dark:focus,
   a.bg-dark:hover,
+  a.bg-themed:focus,
+  a.bg-themed:hover,
   a.navbar-themed:focus,
   a.navbar-themed:hover,
   button.bg-dark:focus,
   button.bg-dark:hover,
+  button.bg-themed:focus,
+  button.bg-themed:hover,
   button.navbar-themed:focus,
   button.navbar-themed:hover {
     background-color: #1d2124!important;
@@ -13795,21 +13831,27 @@ a.text-dark:hover {
     color: #a71d2a!important;
   }
 
-  .text-light {
+  .text-light,
+  .text-themed {
     color: #f8f9fa!important;
   }
 
   a.text-light:focus,
-  a.text-light:hover {
+  a.text-light:hover,
+  a.text-themed:focus,
+  a.text-themed:hover {
     color: #cbd3da!important;
   }
 
-  .text-dark {
+  .text-dark,
+  .text-themed-inverted {
     color: #343a40!important;
   }
 
   a.text-dark:focus,
-  a.text-dark:hover {
+  a.text-dark:hover,
+  a.text-themed-inverted:focus,
+  a.text-themed-inverted:hover {
     color: #121416!important;
   }
 
