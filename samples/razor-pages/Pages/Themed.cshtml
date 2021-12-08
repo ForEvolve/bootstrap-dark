@@ -1,0 +1,125 @@
+@page
+@{
+    ViewData["Title"] = "Themed";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="jumbotron jumbotron-fluid my-5">
+                <div class="container">
+                    <h1 class="display-4">Themed components</h1>
+                    <p class="lead">The elements of this page, like the `.navbar-themed` are changing between dark and
+                        light depending on the
+                        current theme.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-secondary p-5">
+        <div class="col">
+            <div class="text-themed bg-themed">
+                .bg-themed<br>
+                .text-themed
+            </div>
+        </div>
+        <div class="col">
+            <div class="bg-themed">
+                .bg-themed
+            </div>
+        </div>
+        <div class="col">
+            <div class="text-themed">
+                .text-themed
+            </div>
+        </div>
+        <div class="col">
+            <div class="text-themed-inverted bg-themed-inverted">
+                .bg-themed-inverted<br>
+                .text-themed-inverted
+            </div>
+        </div>
+        <div class="col">
+            <div class="bg-themed-inverted">
+                .bg-themed-inverted
+            </div>
+        </div>
+        <div class="col">
+            <div class="text-themed-inverted">
+                .text-themed-inverted
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col">
+            <div class="card text-themed bg-themed mb-2 d-inline-block" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h4 class="card-title">text-themed + bg-themed</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-themed-inverted bg-themed-inverted mb-2 d-inline-block" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h4 class="card-title">text-themed-inverted + bg-themed-inverted</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card text-dark bg-light mb-2 d-inline-block" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h4 class="card-title">text-dark + bg-light</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-light bg-dark mb-2 d-inline-block" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h4 class="card-title">text-light + bg-dark</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h2>Progress bar: .bg-themed</h2>
+            <div class="progress">
+                <div class="progress-bar bg-themed" role="progressbar" style="width: 25%" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Progress bar striped: .bg-themed</h2>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-themed" role="progressbar" style="width: 25%"
+                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col">
+            <div class="alert alert-themed">
+                A simple alert-themed alert—check it out!
+            </div>
+        </div>
+        <div class="col">
+            <div class="alert alert-themed-inverted">
+                A simple alert-themed-inverted alert—check it out!
+            </div>
+        </div>
+    </div>
+</div>

@@ -234,6 +234,18 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
+## 2.1.0
+
+-   Add a Themed page in the sample app.
+-   Add the following themed utilities that flip from dark to light depending on the theme:
+    -   `.bg-themed` (dark: `.bg-dark` | Light: `.bg-light`)
+    -   `.text-themed` (dark: `.text-light` | Light: `.text-dark`)
+    -   `.alert-themed` (dark: `.alert-dark` | Light: `.alert-light`)
+-   Add the following themed utilities (inverted colors) that flip from dark to light depending on the theme:
+    -   `.bg-themed-inverted` (dark: `.bg-light` | Light: `.bg-dark`)
+    -   `.text-themed-inverted` (dark: `.text-dark` | Light: `.text-light`)
+    -   `.alert-themed-inverted` (dark: `.alert-light` | Light: `.alert-dark`)
+
 ## 2.0.0
 
 -   Add `bootstrap-dark-prefers-light.css` which default to Bootstrap dark and display the light colors if the user's `prefers-color-scheme: light`.

@@ -1,0 +1,25 @@
+.navbar-themed {
+    @extend .bg-light;
+    @extend .navbar-light;
+}
+
+.bg-themed {
+    @extend .bg-light;
+}
+.bg-themed-inverted {
+    @extend .bg-dark;
+}
+
+.text-themed {
+    @extend .text-dark;
+}
+.text-themed-inverted {
+    @extend .text-light;
+}
+
+.alert-themed {
+    @extend .alert-light;
+}
+.alert-themed-inverted {
+    @extend .alert-dark;
+}
