@@ -234,6 +234,10 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
 
+## 2.1.1
+
+-   Bump Bootstrap to `4.6.2` (from `4.6.0`)
+
 ## 2.1.0
 
 -   Add a Themed page in the sample app.
