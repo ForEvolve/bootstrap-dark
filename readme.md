@@ -4,8 +4,6 @@ Bootstrap 4 dark theme that supports togging dark/light themes as well. There is
 
 [![Build and deploy](https://github.com/ForEvolve/bootstrap-dark/actions/workflows/main.yml/badge.svg)](https://github.com/ForEvolve/bootstrap-dark/actions/workflows/main.yml)
 [![npm](https://img.shields.io/npm/v/@forevolve/bootstrap-dark)](https://www.npmjs.com/package/@forevolve/bootstrap-dark)
-[![peerDependencies Status](https://img.shields.io/david/peer/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=peer)
-[![devDependency Status](https://img.shields.io/david/dev/forevolve/bootstrap-dark.svg)](https://david-dm.org/forevolve/bootstrap-dark?type=dev)
 
 # Preview
 
