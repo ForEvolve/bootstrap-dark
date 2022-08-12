@@ -430,10 +430,6 @@
     background-color: transparent;
     border: 0
   }
-  .form-control:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #dee2e6
-  }
   .form-control:focus {
     color: #dee2e6;
     background-color: #191d21;
@@ -455,6 +451,10 @@
   .form-control:disabled,
   .form-control[readonly] {
     background-color: #343a40
+  }
+  select.form-control:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #dee2e6
   }
   select.form-control:focus::-ms-value {
     color: #dee2e6;
@@ -1229,7 +1229,7 @@
   }
   .custom-control-label::before {
     background-color: #fff;
-    border: #adb5bd solid 1px
+    border: 1px solid #adb5bd
   }
   .custom-control-label::after {
     background: 50%/50% 50% no-repeat
@@ -1391,6 +1391,7 @@
     border-bottom: 1px solid rgba(255,255,255,.125)
   }
   .nav-tabs .nav-link {
+    background-color: transparent;
     border: 1px solid transparent
   }
   .nav-tabs .nav-link:focus,
@@ -1407,6 +1408,10 @@
     color: #f8f9fa;
     background-color: #191d21;
     border-color: #495057 #495057 #191d21
+  }
+  .nav-pills .nav-link {
+    background: 0 0;
+    border: 0
   }
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
@@ -2014,7 +2019,9 @@
 @media (prefers-color-scheme:dark) {
   .carousel-control-next,
   .carousel-control-prev {
-    color: #fff
+    color: #fff;
+    background: 0 0;
+    border: 0
   }
 }
 @media (prefers-color-scheme:dark) {
@@ -2055,7 +2062,7 @@
     }
   }
   .spinner-border {
-    border: .25em solid currentColor
+    border: .25em solid currentcolor
   }
   @-webkit-keyframes spinner-grow {
     0% {
@@ -2076,7 +2083,7 @@
     }
   }
   .spinner-grow {
-    background-color: currentColor
+    background-color: currentcolor
   }
 }
 @media (prefers-color-scheme:dark) {
