@@ -29,6 +29,25 @@ $green:   darken(#28a745, $color-darker-percent-none);
 $teal:    darken(#20c997, $color-darker-percent-none);
 $cyan:    lighten(#17a2b8, $color-darker-percent-none);
 
+$colors: map-merge(
+  $colors,
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  )
+);
+
 $primary:       $blue;
 $secondary:     $gray-600;
 $success:       $green;
@@ -38,12 +57,26 @@ $danger:        $red;
 $light:         $gray-300;
 $dark:          $gray-800;
 
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  )
+);
+
 //$body-bg:       $gray-900; //#1E1E1E;
 $body-bg:     #191d21;
 $body-color:  #d3d3d3; //$gray-200; //#D4D4D4;
 
-$yiq-text-dark: $gray-900;
-$yiq-text-light: $gray-400;
+$yiq-text-dark: $gray-800;
+$yiq-text-light: $gray-200;
 
 $link-color:                darken($body-color, 15%);
 // $link-decoration:           none;
