@@ -230,7 +230,12 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 # Release notes
 
-Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represent that version.
+Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest`)` version represents that version.
+
+## 3.0.0
+
+-   Fix an issue where dark colors were not taken into account because of the missing variable maps `$colors` and `$theme-colors`. This might be a breaking change.
+-   Update `$yiq-text-dark` from `$gray-900` to `$gray-800` and `$yiq-text-light` from `$gray-400` to `$gray-200` so the text looks better with the updated color maps.
 
 ## 2.1.1
 
