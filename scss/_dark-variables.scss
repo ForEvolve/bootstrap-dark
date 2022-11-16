@@ -75,8 +75,8 @@ $theme-colors: map-merge(
 $body-bg:     #191d21;
 $body-color:  #d3d3d3; //$gray-200; //#D4D4D4;
 
-$yiq-text-dark: $gray-900;
-$yiq-text-light: $gray-400;
+$yiq-text-dark: $gray-800;
+$yiq-text-light: $gray-200;
 
 $link-color:                darken($body-color, 15%);
 // $link-decoration:           none;
