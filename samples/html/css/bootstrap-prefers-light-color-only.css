@@ -1666,14 +1666,6 @@
   .alert-themed-inverted .alert-link {
     color: #040505
   }
-  @-webkit-keyframes progress-bar-stripes {
-    from {
-      background-position: 1rem 0
-    }
-    to {
-      background-position: 0 0
-    }
-  }
   @keyframes progress-bar-stripes {
     from {
       background-position: 1rem 0
@@ -1940,11 +1932,6 @@
   .carousel-caption {
     color: #fff
   }
-  @-webkit-keyframes spinner-border {
-    to {
-      transform: rotate(360deg)
-    }
-  }
   @keyframes spinner-border {
     to {
       transform: rotate(360deg)
@@ -1952,15 +1939,6 @@
   }
   .spinner-border {
     border: .25em solid currentcolor
-  }
-  @-webkit-keyframes spinner-grow {
-    0% {
-      transform: scale(0)
-    }
-    50% {
-      opacity: 1;
-      transform: none
-    }
   }
   @keyframes spinner-grow {
     0% {

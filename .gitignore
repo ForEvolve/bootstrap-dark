@@ -68,3 +68,4 @@ typings/
 *.user
 bin/
 obj/
+.DS_Store

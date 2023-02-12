@@ -1,8 +1,8 @@
 @media (prefers-color-scheme: dark) {
     @import 'node_modules/bootstrap/scss/functions';
-    @import 'node_modules/bootstrap/scss/variables';
 
     @import 'dark-variables';
+    @import 'node_modules/bootstrap/scss/variables';
 
     @import 'node_modules/bootstrap/scss/mixins';
     @import 'dark-mixins';
