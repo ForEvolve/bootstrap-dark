@@ -60,12 +60,6 @@ jobs:
             - run: |
                   echo 'NpmPackageVersion: ${{ steps.nbgv.outputs.NpmPackageVersion }}'
 
-            - run: npm install
-            - run: npm run build
-            - run: npm publish --access=public
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
             - uses: actions/create-release@v1
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -74,3 +68,9 @@ jobs:
                   release_name: v${{ steps.nbgv.outputs.NpmPackageVersion }} Release
                   draft: false
                   prerelease: ${{ github.event_name != 'push' }}
+
+            - run: npm install
+            - run: npm run build
+            - run: npm publish --access=public
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
