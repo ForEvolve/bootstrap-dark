@@ -232,6 +232,10 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest`)` version represents that version.
 
+## 4.0.0
+
+- Add `!default` suffix to all variables and swap the dark and normal variables imports. Chances are, this won't change anything for you.
+
 ## 3.0.0
 
 -   Fix an issue where dark colors were not taken into account because of the missing variable maps `$colors` and `$theme-colors`. This might be a breaking change.
