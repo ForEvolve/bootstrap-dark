@@ -230,7 +230,15 @@ See [Contributing to ForEvolve open source projects](https://github.com/ForEvolv
 
 # Release notes
 
-Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest`)` version represents that version.
+Since CI build numbers are automated, it is hard to know in advance what the next deployed build number will be, so the `(latest)` version represents that version.
+
+## 4.0.0
+
+-   Fix pre and code color, setting the `$pre-color` variable to `$gray-100`, overriding the default of `$gray-900` for the dark theme.
+
+> No breaking changes expected. This version only change the code/pre color.
+> The major bump is to override the pre-release package that I deprecated recently during the no abandonned PR #63.
+> I was not able to delete the package on NPM, so this should fix the issue.
 
 ## 3.0.0
 
