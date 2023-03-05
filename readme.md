@@ -16,7 +16,10 @@ Bootstrap 4 dark theme that supports togging dark/light themes as well. There is
 ![Forms](assets/images/localhost_7051_Forms.png)
 ![Toasts](assets/images/localhost_7051_Toasts.png)
 ![Code](assets/images/localhost_7051_Code.jpeg)
-![Code](assets/images/localhost_7051_Themed.jpeg)
+
+| Themed Dark                                                   | Themed Light                                                    |
+| ------------------------------------------------------------- | --------------------------------------------------------------- |
+| ![Themed Dark](assets/images/localhost_7051_Themed-dark.jpeg) | ![Themed Light](assets/images/localhost_7051_Themed-light.jpeg) |
 
 # Versioning
 
