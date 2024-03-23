@@ -134,6 +134,8 @@ $input-focus-bg:                        $body-bg;
 $input-focus-border-color:              lighten($component-active-bg, 25%);
 $input-focus-color:                     $input-color;
 
+$input-plaintext-color:                 $body-color;
+
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-800;
 $input-group-addon-border-color:        $input-border-color;
